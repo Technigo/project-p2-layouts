@@ -1,0 +1,153 @@
+/* If you can see a peach background, the css file is correctly linked. Feel free to change or remove this styling! */
+
+body {
+  background-color: mintcream;
+  color: black;
+  margin: 0px;
+}
+ 
+
+h1 {
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 50px 10px;
+  margin: 15px 10px;
+  }
+
+h2 {
+  font-size: 25px;
+  font-family: Nunito;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px 10px;
+  margin: 15px 10px;
+}
+span {
+  color: #A39161;
+  font-weight: bold;
+}
+h3 {
+  font-size: 25px;
+  font-family: Nunito;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: center;
+}
+h4 {
+  font-size: 25px;
+  font-family: Nunito;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: center;
+}
+h5 {
+  font-size: 25px;
+  font-family: Nunito;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px 10px;
+  margin: 15px 10px;
+}
+p {
+  font-size: 18px;
+  font-family: Nunito;
+  letter-spacing: 2px;
+  text-align: justify;
+  padding: 15px 10px;
+  margin: 15px 10px;
+}
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto; 
+} 
+  
+/*** Header ***/
+
+
+menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: bold;
+}
+
+menu a {
+  display: inline-block;
+  padding: 0px 15px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  font-size: 20px;
+  color: black;
+}
+
+menu a:hover {
+  background:#C9F4EB;
+  color: hotpink;
+}
+
+header img {
+  width: 200px;
+  margin: 15px;
+  
+}
+.header-box {
+  width: 80%;
+  height: 200px;
+  background-color: #C9F4EB;
+  margin: 50px;
+  border-radius: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-items: center;
+  box-shadow: 5px 5px 3px 2px #95e9d7;
+
+}
+
+
+/*** INSPIRATION CONTAINER ***/
+
+
+.container {
+  display: flex;
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  margin: 50px;
+  border-radius: 15px;
+  flex-direction: column;
+  align-items: center;
+}
+.container img {
+  max-width: 95%;
+  max-height: 95%;
+  padding: 20px 10px;
+  margin: 20px 10px;
+}
+.container:hover {
+  border: 2px solid #A39161;
+  border-radius: 15px;
+}
+
+.container a {
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 20px;
+  color: black;
+  padding: 16px;
+}
+
+.container a:hover {
+  background:#C9F4EB;
+  color: hotpink;
+}
+
+/*** MEDIA QUERIES ***/
+
+
