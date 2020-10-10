@@ -1,0 +1,101 @@
+body{
+  background: #E6E8E9;
+  color: #000000;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin: 0;
+}
+
+/*** HEADER ***/
+
+header {
+  background: #24292d;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+
+}
+
+.hamburger {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 24px;
+
+}
+
+.hamburger div {
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+nav {
+display:none;
+}
+
+nav a {
+  color:#fff;
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+/*** About Container ***/
+
+.about-container{
+  background: #046F9E;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.about-container h1{
+  margin: 5px 24px;
+}
+
+.about-container p{
+  margin: 5px 24px;
+}
+
+
+/*** Essays Container ***/
+
+.essays-container{
+  background: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.essays-container h1{
+  margin: 5px 24px;
+}
+
+.essays-container p{
+  margin: 5px 24px;
+}
+
+/*** Letters Container ***/
+
+/*** Media Queries ***/
+
+@media (min-width: 650px){  
+  header{
+    justify-content: flex-end;
+  }
+  
+  nav {
+      display: flex;
+  }
+  .hamburger {
+      display: none;
+  }
+  .about-container{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
