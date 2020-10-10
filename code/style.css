@@ -1,5 +1,209 @@
-/* If you can see a peach background, the css file is correctly linked. Feel free to change or remove this styling! */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Parisienne&display=swap');
 
 body {
-  background-color: peachpuff;
+  background-color:#edd8c5;
+  background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
+  background-size: 50px 50px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 30px;
+  margin:50px;
+}
+
+p {
+  color: white;
+  font-family: 'Cormorant', serif;
+}
+
+/*HEADER*/
+
+header {
+ background-color: #edd8c5;
+ height: 100px;
+ display: flex;
+ align-items: center;
+ padding: 20px;
+}
+
+.hamburger {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 20px;
+}
+
+.hamburger div {
+  display: flex;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 20%;
+}
+
+.logo {
+  font-family: 'Parisienne', cursive;
+  font-size: 50px;
+  color: white;
+  font-weight: bolder;
+  text-shadow:2px 2px 8px white;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Cormorant', serif;
+  padding: 5px;
+}
+
+nav {
+  margin-left: 20px;
+  display: none;
+}
+
+/*WELCOME SECTION*/
+.welcome {
+  text-align: center;
+  margin: 50px;
+}
+
+.welcome p {
+  text-shadow:2px 2px 8px black;
+}
+
+/*container*/
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container a {
+  background-color: white;
+  color: #edd8c5;
+  border-radius: 16px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  height: 700px;
+  width: 100%;
+}
+
+.container img {
+  border-radius: 16px;
+  width: 80%;
+  margin-top: 10px;
+}
+
+/*MORE*/
+.more {
+  display: flex;
+  justify-content: center;
+}
+.more a {
+  color: #edd8c5;
+  background-color: white;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top:20px;
+  border-radius: 16px;
+}
+
+/*HOVER*/
+.container a:hover {
+  background-color: #edd8c5;
+  color: white;
+}
+
+.container img:hover {
+  opacity: 0.8;
+}
+
+.more a:hover {
+  background-color: #edd8c5;
+  color: white;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #edd8c5;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+
+
+/*MEDIA QUERIES*/
+/*tablet*/
+@media (min-width:668px)  {
+  header {
+    justify-content: space-around;
+
+  }
+  nav {
+    display: inline-block;
+  }
+  .hamburger {
+    display: none;
+  }
+  
+  .container {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+  }
+
+  .container a {
+    width: 30%;
+    flex-grow: 1;
+  }
+
+  .container img {
+    max-height: 80%;
+    width: auto;
+  }
+  
+  .container a:nth-of-type(3) {
+    max-width: 46%;
+  }
+
+}
+
+/*desktop*/
+@media (min-width: 1025px)  {
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container a {
+    width: 25%;
+    flex-grow: 1;
+  }
+
+  .container img {
+    width: 80%;
+  }
+
+}
+
+/*mobile*/
+@media (max-width:667px) {
+  footer {
+    flex-direction: column;
+    height: 200px;
+    margin:0px;
+    padding: 40px;
+  }
 }

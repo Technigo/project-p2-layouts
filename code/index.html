@@ -8,11 +8,63 @@
   </head>
   <body>
     <header>
-      <!-- If you want a header with a title, logo and a navbar, here is where you should add that. -->
+      <!-- A header with a title, logo and a navbar. -->
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="logo">
+        Mo's Maison
+      </div>
+      <nav>
+        <a href="#">CATEGORIES</a>
+        <a href="#">LOCATIONS</a>
+        <a href="#">LOGIN</a>
+      </nav>
     </header>
 
-    <main class="">
-      <!-- The main container to use as the flex parent for your card layout, the main content of the site should be in here.  -->
+    <main>
+      <!-- The main container to use as the flex parent for your card layout. Containing a welcome section, then followed by the cards. -->
+      <section class="welcome">
+        <p>Welcome to</p>
+        <p class="logo">Mo's Maison</p>
+        <p>Interiro and Furniture Design</p>
+      </section>
+
+      <section class="container">
+        <a href="#">
+          <img src="livingroom.jpg" alt="livingroom">
+          <h2>LIVING ROOM</h2>
+        </a> 
+
+        <a href="#">
+          <img src="bedroom.jpg" alt="bedroom">
+          <h2>BEDROOM</h2>
+        </a> 
+
+        <a href="#">
+          <img src="kitchen.jpg" alt="kitchen">
+          <h2>KITCHEN</h2>
+        </a>
+      </section>
     </main>
+
+    <section class="more">
+      <a href="#">
+      <h3>MORE CATEGORIES</h3>
+      </a>
+    </section>
+
+    <footer>
+      <!--The footer contains the impressum and the date-->
+      <p>© 2020 
+        <div class="logo">
+        Mo's Maison
+        </div>
+      </p>
+      <p><a href="#">Impressum</a></p>
+      <p><a href="#">Datenschutz</a></p>
+    </footer>
   </body>
 </html>
