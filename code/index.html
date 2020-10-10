@@ -10,30 +10,101 @@
 
   <header>
     <nav>
-      <a href="index.html">HOME</a>
-      <a href="alldvds.html">ALL DVDs</a>
-      <a href="comedy.html">COMEDY</a>
-      <a href="action.html">ACTION</a>
-      <a href="romance.html">ROMANCE</a>
-      <a href="horror.html">HORROR</a>
-      <a href="other.html">OTHER</a>
+        <div class="dropdown-main">
+            <div>
+                <button class="droptxt-main"><a href="index.html">HOME</a></button>
+            </div>
+            <div class="dropdown-content-main">
+            </div>
+        </div>
+        <div class="dropdown-main">
+            <div>
+                <button class="droptxt-main"><a href="alldvds.html">DVD LIBRARY</a></button>
+            </div>
+            <div class="dropdown-content-main">
+                <a href="alldvds.html">ALL DVDs</a>
+                <a href="comedy.html">COMEDY</a>
+                <a href="action.html">ACTION</a>
+                <a href="romance.html">ROMANCE</a>
+                <a href="horror.html">HORROR</a>
+                <a href="other.html">OTHER</a>
+            </div>
+        </div>
+        <div class="dropdown-main">
+            <div>
+                <button class="droptxt-main"><a href="register.html">SIGN UP</a></button>
+            </div>
+            <div class="dropdown-content-main">
+            </div>
+        </div>
+        <div class="dropdown dropdown-main">
+            <div>
+                <button class="droptxt-main">
+                    <a href="cart.html" class="with-icon">
+                        <img src="shopping-cart-small.png">
+                    </a>
+                </button>
+            </div>
+            <div class="dropdown-content-main">
+            </div>
+        </div>
     </nav>
-    <div class="dropdown">
-      <div class="dropdown-logo">
-        <button class="dropbtn"></button>
-        <buotton class="droptxt">MENU</buotton>
-      </div>
-      <div class="dropdown-content">
-        <a href="index.html">HOME</a>
-        <a href="alldvds.html">ALL DVDs</a>
-        <a href="comedy.html">COMEDY</a>
-        <a href="action.html">ACTION</a>
-        <a href="romance.html">ROMANCE</a>
-        <a href="horror.html">HORROR</a>
-        <a href="other.html">OTHER</a>
-      </div>
-    </div>
 
+    <div class="dropdown">
+        <div class="dropdown-logo">
+            <button class="dropbtn"></button>
+            <button class="droptxt">MENU</button>
+        </div>
+        <div class="dropdown-content">
+            <div class="dropdown-small">
+                <div>
+                    <button class="droptxt-small">
+                        <a href="index.html">HOME</a>
+                    </button>
+                </div>
+                <div class="dropdown-content-small">
+                </div>
+            </div>
+            <!-- I had to mess up the order of the menu items. When I put the library first,
+            I cannot hover over the other items anymore, unless I make sure their "dropdown-content-small"
+            has the same length. Do you know why this might be? To see what I mean, you can
+            check the menu on the other items such as sign up (I haven't adjusted the HTML
+            there yet.-->
+            <div class="dropdown-small">
+              <div>
+                  <button class="droptxt-small">
+                      <a href="register.html">SIGN UP</a>
+                  </button>
+              </div>
+              <div class="dropdown-content-small">
+              </div>
+          </div>
+          <div class="dropdown-small">
+            <div>
+                <button class="droptxt-small">
+                    <a href="cart.html"><img src="shopping-cart-small.png"></a>
+                </button>
+            </div>
+            <div class="dropdown-content-small">
+            </div>
+        </div>
+            <div class="dropdown-small">
+              <div>
+                  <button class="droptxt-small">
+                      <a href="alldvds.html">DVD-LIBRARY</a>
+                  </button>
+              </div>
+              <div class="dropdown-content-small">
+                <a href="alldvds.html">ALL DVDs</a>
+                <a href="comedy.html">COMEDY</a>
+                <a href="action.html">ACTION</a>
+                <a href="romance.html">ROMANCE</a>
+                <a href="horror.html">HORROR</a>
+                <a href="other.html">OTHER</a>
+              </div>
+            </div> 
+        </div>
+    </div>
   </header>
 
   <section class="intro">
@@ -66,10 +137,12 @@
 
   <section>
     <!-- what's new, List of recently added dvds-->
-    <h3 class="recently-added">RECENTLY ADDED DVDs</h3>
+    <h3>RECENTLY ADDED DVDs</h3>
     <div class="DVD-card-holder">
       <div class="DVD-card">
-        <span class="DVD-title">Nachts im Museum</span>
+        <div class="DVD-title">
+          <div class="DVD-title-item">Nachts im Museum</div>
+        </div>
         <img src="./images/nachtsim.jpg" alt="DVD-cover">
         <div class="description">
           Tagträumer Larry beginnt als Nachtwächter im Naturhistorischen
@@ -80,13 +153,15 @@
           verwüsten.
         </div>
         <div class="DVD-audio">
-          <p><span>Audio:</span> DE, EN</p>
-          <p><span>Subtitles:</span> DE, EN, TR</p>
-          <button>ADD to Cart</button>
+          <div><span class="audio-span">Audio:</span> DE, EN</div>
+          <div><span>Subtitles:</span> DE, EN, TR</div>
         </div>
+          <button class="card-btn">ADD to Cart</button>
       </div>
       <div class="DVD-card">
-        <span class="DVD-title">Spiel ohne Regeln</span>
+        <div class="DVD-title">
+          <div class="DVD-title-item">Spiel ohne Regeln</div>
+        </div>
         <img src="./images/spielor.jpg" alt="DVD-cover">
         <div class="description">
           Nachdem er bei einer wilden Jagd durch Los Angelas von der Polizei
@@ -96,13 +171,15 @@
           gefolgen war, in einem knallharten Knast in der Einöde von Texas.
         </div>
         <div class="DVD-audio">
-          <p><span>Audio:</span> DE, EN</p>
-          <p><span>Subtitles:</span> DE, EN, TR</p>
-          <button>ADD to Cart</button>
+          <div><span class="audio-span">Audio:</span> DE, EN</div>
+          <div><span>Subtitles:</span> DE, EN, TR</div>
         </div>
+          <button class="card-btn">ADD to Cart</button>
       </div>
       <div class="DVD-card">
-        <span class="DVD-title">Into the Blue </span>
+        <div class="DVD-title">
+          <div class="DVD-title-item">Into the Blue </div>
+        </div>
         <img src="./images/intotheblue.jpeg" alt="DVD-cover">
         <div class="description">
           Die vier jungen Taucher Jared, Sam, Bryce und Amanda entdecken ein
@@ -113,13 +190,15 @@
           entdecken.
         </div>
         <div class="DVD-audio">
-          <p><span>Audio:</span> DE, EN</p>
-          <p><span>Subtitles:</span> DE, EN, TR</p>
-          <button>ADD to Cart</button>
+          <div><span class="audio-span">Audio:</span> DE, EN</div>
+          <div><span>Subtitles:</span> DE, EN, TR</div>
         </div>
+          <button class="card-btn">ADD to Cart</button>
       </div>
       <div class="DVD-card">
-        <span class="DVD-title">Eiskalte Engel</span>
+        <div class="DVD-title">
+          <div class="DVD-title-item">Eiskalte Engel</div>
+        </div>
         <img src="./images/eiskalte.jpg" alt="DVD-cover">
         <div class="description">
           Das Spiel heisst Verführung. Und wer sich verliebt, verliert... 
@@ -128,13 +207,15 @@
           reich, schön- und skrupellos. Gebrochene Herzen pflastern ihren Weg. 
         </div>
         <div class="DVD-audio">
-          <p><span>Audio:</span> DE, EN</p>
-          <p><span>Subtitles:</span> DE</p>
-          <button>ADD to Cart</button>
+          <div><span class="audio-span">Audio:</span> DE, EN</div>
+          <div><span>Subtitles:</span> DE</div>
         </div>
+          <button class="card-btn">ADD to Cart</button>
       </div>
       <div class="DVD-card">
-        <span class="DVD-title">Resident Evil</span>
+        <div class="DVD-title">
+          <div class="DVD-title-item">Resident Evil</div>
+        </div>
         <img src="./images/resevil.png" alt="DVD-cover">
         <div class="description">
           Mittlerweile sind fast 99% der Erdbevölkerung mit dem todbringenden
@@ -144,13 +225,15 @@
           verlassenen Highways von Nevada zu ziehen.
         </div>
         <div class="DVD-audio">
-          <p><span>Audio:</span> DE, EN</p>
-          <p><span>Subtitles:</span> DE</p>
-          <button>ADD to Cart</button>
+          <div><span class="audio-span">Audio:</span> DE, EN</div>
+          <div><span>Subtitles:</span> DE</div>
         </div>
+          <button class="card-btn">ADD to Cart</button>
       </div>
       <div class="DVD-card">
-        <span class="DVD-title">Coyote Ugly</span>
+        <div class="DVD-title">
+          <div class="DVD-title-item">Coyote Ugly</div>
+        </div>
         <img src="./images/coyote.jpg" alt="DVD-cover">
         <div class="description">
           Die schöne Violet kommt aus der Provinz ins turbulente New York, 
@@ -160,13 +243,15 @@
           kann.
         </div>
         <div class="DVD-audio">
-          <p><span>Audio:</span> DE, EN</p>
-          <p><span>Subtitles:</span> DE, EN, FR, ES, IT</p>
-          <button>ADD to Cart</button>
+          <div><span class="audio-span">Audio:</span> DE, EN</div>
+          <div><span>Subtitles:</span> DE, EN, FR, ES, IT</div>
         </div>
+          <button class="card-btn">ADD to Cart</button>
       </div>
       <div class="DVD-card">
-        <span class="DVD-title">Pearl Harbor</span>
+        <div class="DVD-title">
+          <span class="DVD-title-item">Pearl Harbor</span>
+        </div>
         <img src="./images/pearlharbor.jpeg" alt="DVD-cover">
         <div class="description">
           Rafe und Danny sind von Kindsbeinen an die besten Freunde. Das Fliegen
@@ -176,10 +261,10 @@
           die hübsche Krankenschwester Evelyn.
         </div>
         <div class="DVD-audio">
-          <p><span>Audio:</span> DE, EN</p>
-          <p><span>Subtitles:</span> DE</p>
-          <button>ADD to Cart</button>
+          <div><span class="audio-span">Audio:</span> DE, EN</div>
+          <div><span>Subtitles:</span> DE</div>
         </div>
+          <button class="card-btn">ADD to Cart</button>
       </div>
     </div>
   </section>
