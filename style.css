@@ -12,6 +12,7 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   padding: 50px 10px;
   margin: 15px 10px;
+  text-align: center;
   }
 
 h2 {
@@ -62,32 +63,55 @@ p {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto; 
+  display: flex;
+  justify-items: center;
 } 
   
 /*** Header ***/
-
-
-menu {
+header {
+  background: #C9F4EB;
+  height: 80px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-family: 'Darker Grotesque', sans-serif;
-  font-weight: bold;
+  padding: 50px 16px;
+  
 }
 
-menu a {
-  display: inline-block;
-  padding: 0px 15px;
+.hamburger{
+  display: flex;
+  height: 30px;
+  width: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 5px;
+  background:black;
+  display: flex;
+ margin-left: 300px;
+  
+}
+
+nav {
+  display: none;
+  font-family: 'Darker Grotesque', sans-serif;
   font-weight: bold;
+  margin: 0 5px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 5px;
   text-decoration: none;
   border-radius: 5px;
-  margin: 0 10px;
-  font-size: 20px;
+  font-size: 18px;
   color: black;
 }
 
-menu a:hover {
-  background:#C9F4EB;
+nav a:hover {
+  background-color: white;
   color: hotpink;
 }
 
@@ -96,29 +120,19 @@ header img {
   margin: 15px;
   
 }
-.header-box {
-  width: 80%;
-  height: 200px;
-  background-color: #C9F4EB;
-  margin: 50px;
-  border-radius: 10px;
-  padding-top: 10px;
-  display: flex;
-  justify-items: center;
-  box-shadow: 5px 5px 3px 2px #95e9d7;
-
-}
-
 
 /*** INSPIRATION CONTAINER ***/
 
+.inspiration-container{
+  margin-top: 50px;
+}
 
 .container {
   display: flex;
   background-color: white;
   width: 90%;
   height: 90%;
-  margin: 50px;
+  margin: 20px;
   border-radius: 15px;
   flex-direction: column;
   align-items: center;
@@ -126,8 +140,8 @@ header img {
 .container img {
   max-width: 95%;
   max-height: 95%;
-  padding: 20px 10px;
-  margin: 20px 10px;
+  padding: 5px 10px;
+  margin: 5px 10px;
 }
 .container:hover {
   border: 2px solid #A39161;
@@ -150,4 +164,52 @@ header img {
 
 /*** MEDIA QUERIES ***/
 
+@media (min-width: 650px) {
+    
+  header{
+      justify-content: space-between;
+  }
+  nav {
+      display: inline-block;
+  }
 
+  .hamburger {
+      display: none;
+  }
+  .container  {
+    width: 40%;
+    flex-grow: 1;
+ }
+ .inspiration-container {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   margin: 5px;
+
+ }
+}
+ @media (min-width: 900px){
+
+nav a {
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  font-size: 18px;
+  color: black;
+  }
+
+.container {
+  width: 22%;
+  margin: 8px;
+  flex-grow: 1;
+}
+.inspiration-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 5px;
+
+}
+}
