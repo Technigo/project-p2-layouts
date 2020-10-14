@@ -1,12 +1,10 @@
 # Project Name
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+We were asked to design a responsive website (for mobille, tablet and desktop displays). I have tried to do this, making all pages responsive, using Media queries with the appropriate breakpoints.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I have used a variety of tools, mainly Adobe Illustrator to design the logos and images. I then used HTML, CSS and the media queries function to make the pages responsive.
 
 ## View it live
 
