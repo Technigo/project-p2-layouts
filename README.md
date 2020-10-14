@@ -1,4 +1,4 @@
-# Project Name
+# Kara Howes responsive website - Bella and Bubbles
 
 We were asked to design a responsive website (for mobille, tablet and desktop displays). I have tried to do this, making all pages responsive, using Media queries with the appropriate breakpoints.
 
