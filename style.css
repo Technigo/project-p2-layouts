@@ -21,8 +21,8 @@ h2 {
   letter-spacing: 2px;
   text-align: center;
   font-weight: bold;
-  padding: 15px 10px;
-  margin: 15px 10px;
+  margin: 40px;
+  margin-bottom: 50px;
 }
 span {
   color: #A39161;
@@ -34,6 +34,8 @@ h3 {
   letter-spacing: 2px;
   font-weight: bold;
   text-align: center;
+  padding: 15px 10px;
+  margin: 15px 10px;
 }
 h4 {
   font-size: 25px;
@@ -42,15 +44,7 @@ h4 {
   font-weight: bold;
   text-align: center;
 }
-h5 {
-  font-size: 25px;
-  font-family: Nunito;
-  letter-spacing: 2px;
-  text-align: center;
-  font-weight: bold;
-  padding: 15px 10px;
-  margin: 15px 10px;
-}
+
 p {
   font-size: 18px;
   font-family: Nunito;
@@ -70,11 +64,11 @@ p {
 /*** Header ***/
 header {
   background: #C9F4EB;
-  height: 80px;
+  height: 100px;
   display: flex;
   align-items: center;
   padding: 50px 16px;
-  
+  background-image: url("./images/KH_header_backgr_a5_1.jpg");
 }
 
 .hamburger{
@@ -124,7 +118,7 @@ header img {
 /*** INSPIRATION CONTAINER ***/
 
 .inspiration-container{
-  margin-top: 50px;
+  
 }
 
 .container {
@@ -158,7 +152,7 @@ header img {
 }
 
 .container a:hover {
-  background:#C9F4EB;
+  background:white;
   color: hotpink;
 }
 
