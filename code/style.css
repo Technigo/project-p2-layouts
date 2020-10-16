@@ -1,5 +1,176 @@
-/* If you can see a peach background, the css file is correctly linked. Feel free to change or remove this styling! */
+/*/*colors #74E1E1 #FF92EE #F1EBE4  #FFD5F9  If you can see a peach background, the css file is correctly linked. Feel free to change or remove this styling! */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300;500&display=swap';)
+
+html 
+{box-sizing: border-box;}
+
 
 body {
-  background-color: peachpuff;
+  background-color: #FFFFFF  ;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 100;
+  width: 100%;
+}
+
+
+ /*** HEADER***/
+ header {
+  background:#FF92EE ;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  margin: 0%;
+
+}
+
+header img{
+height: 120%;
+border-radius: 10%;
+}
+/*** navigation***/
+
+.hamburger{
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 24px;
+}
+
+.hamburger div{
+  width: 30px;
+  height: 5px;
+  background: #fff;
+}
+
+nav{
+  display:none;
+
+}
+
+nav a{
+  color:#fff;
+  font-weight: bolder;
+  text-decoration: none;
+  margin-left: 26px;
+}
+/*fertig*/
+
+.cover{
+  background-color: #74E1E1  ;
+  width: auto;
+  height: fit-content;
+  text-align: left;
+  padding: 40px;
+  display: block;
+  margin-top: 10px;
+}
+
+.master{
+  margin: 4%;
+  margin-top: 0px;
+}
+.container1, .container2, .container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-left: 0% 4% 0% 4%;
+}
+
+h2{
+  border: 2px#F1EBE4  ;
+  padding: 30px;
+  align-content: center;
+  width: fit-content;
+  font-size: 32px;
+ font-weight: 100;
+}
+
+.row, .row2{
+  display: flex;
+  padding: 0 4px;
+  width: 100%;
+}
+/*
+.row2 img{
+  width: 100%;
+}
+*/
+
+.column{
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+  margin-top: 0px;
+
+}
+
+.column2{
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  margin-top: 0px;
+  vertical-align: middle;
+}
+
+.column img, .column2 img .textbox . .textbox2 {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.textbox{
+  height: 200px;
+  background-color: #74E1E1 ;
+}
+
+.textbox2{
+  height: 300px;
+  background-color: #FFD5F9;
+
+}
+
+
+/*responsive untereinander*/
+@media (max-width: 900px) {
+   .row,  .column {
+    flex-wrap: wrap;
+    flex: 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+}
+
+  @media (max-width: 900px) {
+    .row2{
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+  .column2{
+  flex: 45%;
+  max-width: 45%;
+ 
+}
+  }
+
+@media (max-width: 600px) {
+  .column2 {
+  flex: 100%;
+  max-width: 100%;
+}
+}
+/***media queries header und navi***/
+@media (min-width: 900px){
+  header{
+      justify-content: space-between;
+  }
+  nav{
+      display:inline-block ;
+  }
+  .hamburger{
+      display: none;
+  }
+
 }
