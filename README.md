@@ -1,12 +1,10 @@
-# Project Name
+# Little Lola introduces herself
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+I am not a fan of showcasing my child online, but for the cardlayout she is the perfect subject, since I have an insane amount of pictures of her.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Flexing the flexbox muscle was indeed a challenge and I spend many-many-many hours staring at my screen...
 
 ## View it live
 

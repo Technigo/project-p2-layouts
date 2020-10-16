@@ -2,17 +2,112 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project Name</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Lolas little treasure box</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="Photos/favicon.ico" type="image/icon">
+   
   </head>
   <body>
     <header>
-      <!-- If you want a header with a title, logo and a navbar, here is where you should add that. -->
+      <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+      <img src="Photos/Logo.png" alt="Lola">
+      <nav>
+          <a href="#c1"> <strong>Das bin ich, <mark>Lola</mark></strong> </a>
+          <a href="#c2"> Meine kleinen Freuden</a>
+          <a href="#c3">Meine Lieblingswesen</a>
+      </nav>
     </header>
 
-    <main class="">
+<!--Coverbox-->
+<div class="cover">
+  <div class="container">
+  <section class="row">
+    <div class="column">
+      <h1 style="font-size: 300%;">Hi, I'm Lola.</h1>
+      <p style="font-size: 150%; font-weight: 100;">i'm a tiny human on this planet, trying to make sense of this so-called world. <br> 
+        one thought at the time. <br>
+        <br>
+        my biggest achievement up until now: loving the thought of birthdays.
+        <br>
+        i can walk.
+      </p>
+    </div>
+    <div class="column" style="display: flex; flex-direction: row-reverse; " >
+        <img src="Photos/pp.jpg" alt="Lola" style="width: 60%;" >
+    </div>
+</div>
+</section>
+</div>
+</div>
+
+
+    <main class="master">
       <!-- The main container to use as the flex parent for your card layout, the main content of the site should be in here.  -->
+      <div class="container1" id="c1">
+        <h2> Das bin ich </h2>
+          <section class="row">
+            <div class="column" style="margin-right: 4px;">
+              <img src="Photos/a_banana.jpg" alt=""  style="width: 100%;">
+              <img src="Photos/a_walls.jpg" alt=""  style="width: 100%;">
+            </div>
+            <div class="column"style="margin-left: 4px;">
+              <img src="Photos/h_sofadad.jpg" alt=""  style="width: 100%;">
+              <p style="font-weight: 400; text-align: center; width: 100%;"> we are style</p>
+            </div>
+          </section>
+      </div>
+
+      <div class="container2" id="c2">
+        <h2> Meine kleine Freuden </h2>
+         <section class="row">
+           <img src="Photos/q_race.jpg" width="100%">
+         </section>
+      </div>
+
+      <div class="container3" id="c3">
+        <h2> Meine Lieblingswesen </h2>
+          <section class="row2">
+            <div class="column2">
+              <img src="Photos/q_friends.jpg" alt=""  style="width: 100%;">
+              <img src="Photos/h_opa.jpg" alt=""  style="width: 100%;">
+              <img src="Photos/q_bed.jpg""  style="width: 100%;">
+              <img src="Photos/h_drinks.jpg"  alt=""  style="width: 100%;" >
+              <img src="Photos/a_frettly.jpg"  alt=""  style="width: 100%;">
+              <div class="textbox" style="width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                <p style="text-align: center; padding: 2px; color: grey;">as we already know, strangers often come with stories that seem like baggage but that is only because nobody really listens
+                  up to the point when a story becomes a story.
+                </p>
+              </div>
+            </div>
+            <div class="column2">
+              <img src="Photos/h_funnyface.jpg" alt=""  style="width: 100%;">
+              <img src="Photos/h_mamas.jpg" alt=""  style="width: 100%;">
+              <div class="textbox2" style="width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center;">
+                <p style="text-align: center; padding: 2px; color: grey ;">we like everything sweet and are silly for potatoes and messy kissing</p>
+              </div>
+              <img src="Photos/h_kissmom.jpg" alt=""  style="width: 100%;">
+              <img src="Photos/h_cool.jpg" alt=""  style="width: 100%;">
+            </div>
+            <div class="column2">
+              <img src="Photos/h_fams.jpg" alt=""  style="width: 100%;">
+              <img src="Photos/q_clowns.jpg" alt=""  style="width: 100%;">
+              <img src="Photos/a_cat.jpg" alt=""  style="width: 100%;">
+              <img src="Photos/a_icecream.jpg"  style="width: 100%;">
+            </div>
+            <div class="column2">
+              <img src="Photos/h_chilloma.jpg" alt=""  style="width: 100%;">
+              <img src="Photos/h_cuzzs.jpg" alt=""  style="width: 100%;">
+              <img src="Photos/a_giraffe.jpg" alt=""  style="width: 100%;">
+              <img src="Photos/a_wall.jpg" alt=""  style="width: 100%;">
+            </div>
+          </section>
+      </div>
+
     </main>
   </body>
 </html>
