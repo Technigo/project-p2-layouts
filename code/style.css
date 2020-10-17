@@ -1,5 +1,371 @@
-/* If you can see a peach background, the css file is correctly linked. Feel free to change or remove this styling! */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
 
-body {
-  background-color: peachpuff;
+/* menu */
+
+menu {
+    display: flex;
+    justify-content: center;
+    font-family: 'Pathway Gothic One', sans-serif;
+    padding: 0px 20px;
+
+  }
+  
+  menu a {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 20px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 0 5px;
+    
+  }
+  
+  menu a:hover {
+    background:lightpink;
+    color: gray;
+  }
+
+/* general */
+
+header {
+    background-image: url(https://images.unsplash.com/photo-1559251606-c623743a6d76?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    height: 500px;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 70px;
+    font-family: 'Pathway Gothic One', sans-serif;
 }
+
+h1 {
+    margin: 0px;
+    color: gray;
+    font-size: 90px;
+    text-align: center;
+    font-family: 'Bungee Shade', cursive;
+    padding-left: 10px;
+}
+
+h2{
+  color: black;
+  font-size: 30px;
+  text-align: left;
+  font-family: 'Pathway Gothic One', sans-serif;
+  padding-left: 10px;
+}
+
+h3{
+  color: darkgrey;
+  font-size: 26px;
+  text-align: left;
+  font-family: 'Pathway Gothic One', sans-serif;
+  padding-left: 10px;
+}
+
+h4{
+  color: black;
+  font-size: 20px;
+  text-align: left;
+  font-family: 'Pathway Gothic One', sans-serif;
+  padding-left: 10px;
+}
+
+p{
+  color: black;
+  font-size: 18px;
+  text-align: left;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+/* index */
+
+.indexmon {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+  }
+  
+  .info {
+    width: 70%;
+    padding: 10px;
+  }
+  
+  .kontakt {
+    width: 30%;
+    height: 400px;
+    padding-left: 40px;
+    margin: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    background-color: lightgray;
+  }
+
+/* arbeitserfahrung */
+
+.arbetinfo {
+  width: 30%;
+  border: #efd4d3;
+  border-style: dotted;
+}
+
+.mom {
+  display: flex;
+  padding: 20px;
+}
+
+.kid {
+  margin: 10px;
+  background-color: lightgray;
+  padding: 20px;
+  width: 70%;
+}
+
+.left {
+  float: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* sprachen */
+
+.langmom {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.langu {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 20%;
+
+}    
+
+.level {
+  background-color:#efd4d3;
+  padding: 20px;
+  width: 60%;
+
+}
+
+/*ausbildung*/
+.timeline-area {
+  margin: 90px auto;
+  width: 360px;
+  border-left: 2px solid black;
+  padding: 0 20px;
+}
+
+.school {
+  border-radius: 2px;
+  border-style: solid;
+  border-color: #efd4d3;
+  padding: 10px;
+}
+
+/*IT*/
+.itkenntnisse {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.itkno {
+  border-radius: 1px;
+  border-color: lightgray;
+  border-style: solid;
+  padding: 10px;
+  width: 300px;
+  height: 150px;
+  margin: 10px;
+}
+
+/* weiteres */
+.we {
+  margin: 20px;
+  height: 400px;
+  width: 500px;
+  padding: 10px;
+  background-color: lightgray;
+  box-shadow: 4px 4px 8px 4px #efd4d3; 
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+
+}
+
+.weiteres {
+  margin: 10px;
+  display: flex;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+/* footer */
+
+footer {
+  background-color: #efd4d3;
+  color: black;
+  font-size: 16px;
+  font-family: 'Pathway Gothic One', sans-serif;
+  padding: 70px;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.pic {
+  text-align: center;
+  font-size: 80px;
+  width: 120px;
+  height: 120px;
+  background-color: #e16560;
+  border-radius: 50%;
+
+}
+
+/* tablet */
+
+@media (min-width:668px) and (max-width: 1024px) {
+
+h1 {
+  font: 65px; 
+  line-height: 100%;
+  padding: 10px;
+}
+/* i want the text to wrap when its too long, but i cant figure out how*/
+
+.indexmon {
+display: flex;
+flex-wrap: wrap;
+}
+
+.info{
+ width: 100%;
+}
+
+.kontakt {
+  width: 100%;
+}
+
+.mom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.arbetinfo{
+  width: 100%;
+  text-align: center;
+}
+
+.kid{
+  width: 100%;
+}
+
+  .langmom {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .level {
+    width: 100%;
+  }
+
+  .weiteres {
+    display: flex;
+    flex-wrap: wrap;
+    height: 1000px;
+  }
+
+  .we {
+    height: 400px;
+    width: 42%;
+  }
+}
+
+/* phone */
+
+@media (max-width: 668px) {
+
+h1 {
+  font-size: 45px;
+  line-height: 100%;
+  margin-bottom: 40px;
+}
+
+  .we {
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 500px;
+  }
+
+.langmom {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.level {
+  width: 100%;
+}
+
+.indexmon {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info {
+  width: 100%;
+}
+
+.kontakt {
+  width: 100%;
+}
+
+
+.footitext {
+  text-align: right; 
+  padding-left: 50px;
+}
+
+.pic {
+  height: 100px;
+  width: 190px;
+  font-size: 60px;
+}
+
+.mom {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.arbetinfo {
+  width: 100%;
+}
+
+.kid {
+width: 100%;
+}
+
+.weiteres {
+  display: flex;
+  flex-wrap: wrap;
+  height: 1800px;
+}
+
+.we {
+  height: 400px;
+  width: 100%;
+}
+
+}
+
+
