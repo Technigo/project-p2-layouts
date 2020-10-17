@@ -20,14 +20,6 @@ header{
   color:black;
  }
 
- footer{
-   width: 100%;
-   background: white;
-   color: black;
-   padding: 5px;
-   margin: 5px;
-   font-size: smaller;
- }
 
 h1{
   font-family: 'Bungee Shade', cursive;
@@ -38,6 +30,7 @@ h2{
   font-family: 'Bungee Hairline', cursive;
   font-size: 30px;
   padding: 10px 20px;
+  text-decoration: none;
 }
 
 h3{
@@ -51,7 +44,7 @@ p{
   padding: 0 0 10px 20px;
 }
 
-.flex-container{
+.flex-container-home{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -60,7 +53,7 @@ p{
   text-align: center;
 }
 
-.flex-item{
+.flex-item-home{
   background-color: rgb(194, 216, 245);
   padding: 10px;
   flex: 30%;
@@ -88,11 +81,11 @@ p{
   -ms-transform: translate(-50%, -50%)
 }
 
-.flex-item:hover .image {
+.flex-item-home:hover .image {
   opacity: 0.3;
 }
 
-.flex-item:hover .middle {
+.flex-item-home:hover .middle {
   opacity: 1;
 }
 
@@ -104,4 +97,54 @@ p{
   border-radius: 10px;
 }
 
+.icon{
+  background-color: white;
+  border-radius: 100%;
+  width: 50px;
+  padding: 15px;
+  margin: 20px 0 0 20px;
+}
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.flex-container-r{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.flex-item-r{
+  background-color: rgb(194, 216, 245);
+  padding: 10px;
+  flex: 45%;
+  position: relative;
+}
+
+
+
+footer{
+  width: 100%;
+  background: white;
+  color: black;
+  padding: 5px;
+  margin: 5px;
+}
+
+.social-icon{
+  height: 35px;
+  padding: 10px;
+  float: right;
+}
+
+.footer-h2{
+  font-size: 25px;
+}
+
+.p-footer{
+  font-size: 15px;
+}
