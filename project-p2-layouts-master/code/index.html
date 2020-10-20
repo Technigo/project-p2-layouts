@@ -2,24 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Project Name</title>
+    <title>Responsive Website Project</title>
     <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
   </head>
   <body>
-    
     <header>
-      <div class="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
+      <div class="hamburger-dropdown-menu">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">ESSAYS</a></li>
+                <li><a href="#">LETTERS</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <nav>
-          <a href="#">ABOUT</a>
-          <a href="#">ESSAYS</a>
-          <a href="#">LETTERS</a>
+
+      <nav class="desktop-menu">
+        <a href="#">ABOUT</a>
+        <a href="#">ESSAYS</a>
+        <a href="#">LETTERS</a>
       </nav>
     </header>
 
@@ -27,16 +37,17 @@
       <div class="about-container">
         <h1>About Section</h1>
         <p>Blablablablabla</p>
-
       </div>
+
       <div class="essays-container">
         <h1>Essays Section</h1>
         <p>Blablablablabla</p>
       </div>
+      
       <div class="letters-container">
-
+        <h1>Letters Section</h1>
+        <p>Blablablablabla</p>
       </div>
-
     </main>
   </body>
 </html>
