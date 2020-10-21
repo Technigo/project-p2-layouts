@@ -1,0 +1,328 @@
+body {
+  background-color: #e7dec8;
+  color: #30475e; 
+  font-family: Helvetica; 
+  margin: 0; 
+}
+
+h1 {
+  text-align: center; 
+  font-size: 20px; 
+  font-weight: bold;
+ }
+
+h2 {
+  text-align: center; 
+  font-size: 15px; 
+}
+
+h3 {
+  text-align: center; 
+  font-size: 10px; 
+}
+
+.subtitle {
+  margin-top: 50px;
+}
+
+    /*** HEADER ***/
+
+header {
+  background-color: #30475e; 
+  height: 80px; 
+  display: flex; 
+  align-items: center; 
+  padding: 0 16px; 
+}
+
+.hamburger { /* parent */ 
+  display: flex; 
+  width: 30px; 
+  height: 30px; 
+  flex-direction: column; 
+  justify-content: space-between;
+  margin-right: 24px;
+}
+
+.hamburger div { /* child */ 
+  width: 30px; 
+  height: 5px; 
+  background-color: #fff; 
+  border-radius: 5px; 
+}
+
+header img {
+    width: 220px; 
+}
+
+nav {
+  display: none;
+}
+
+nav a {
+  color: #fff; 
+  text-decoration: none;
+  margin-left: 20px; 
+}
+
+/*** DESCRIPTION ***/
+
+.cover {
+  display: flex; 
+  justify-content: center; 
+  align-content: center;
+  height: auto; 
+  position: relative; 
+  overflow: hidden;
+  margin: 20px 0px; 
+  z-index: 2; 
+ }
+
+.cover img {
+  position: absolute;
+  object-fit: cover;
+  object-position: bottom; /*** Der untere Teil des Bildes soll gezeigt werden, die Weggabelung. Funktioniert noch nicht ***/
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.4;
+ }
+
+.center {
+  padding: 20px;
+  align-self: center;
+  position: relative;
+  z-index: 2;
+}
+
+.description {
+  display: flex;
+  justify-content: center; 
+  color: #e7dec8; 
+  text-align: center;
+}
+
+.description div {
+  width: 40%; 
+  height: auto;
+  padding: 10px;
+  background-color:  #49525c; 
+  border-radius: 20px; 
+}
+
+/*** OFFERS ***/
+
+.offers {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-around;
+  align-items: center;
+  width: 100%; 
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+}
+
+.jobsurfers {
+  background-color: #cbaf87;
+  width: 50%; 
+  height: 300px;
+  box-shadow: 6px 6px 0 0  slategrey; 
+  border: 2px solid slategrey;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.companies {
+  background-color: #7e8a97; 
+  width: 50%; 
+  height: 300px; 
+  box-shadow: 6px 6px 0 0 slategrey; 
+  border: 2px solid slategrey;
+  margin: 10px; 
+  border-radius: 10px;
+}
+
+/*** SPEECH BUBBLES ***/
+
+.speech-bubbles {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  height: auto;
+}
+
+.speech-bubbles div { /* Noch Hover effects hinzufügen */
+  width: 200px; 
+  height: 100px; 
+  border: 1px solid #30475e;
+  margin: 20px; 
+}
+
+.question-blue {
+  background-color: #7e8a97;
+}
+
+.question-beige {
+  background-color: #cbaf87;
+}
+
+/*** SUBSCRIBE ***/
+  
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  padding: 16px; 
+  text-align: center; 
+}
+
+button {
+  background-color: coral; 
+  border: 1px solid grey;
+  border-radius: 5px; 
+  color: white; 
+  width: 100px; 
+  height: 40px; 
+}
+
+/*** STEPS ***/
+
+.steps {
+  display: flex; 
+  flex-direction: column;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  height: 300px; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.step img {
+  width: 120px; 
+  height: 100px; 
+  padding: 10px;
+  margin: 10px; 
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.steptext {
+  width: 100px; 
+  text-align: center;
+}
+
+.stepnumber { 
+  font-size: 30px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black; 
+  border-radius: 50%;
+  padding: 4px;
+  margin: 10px; 
+}
+
+
+/*** Footer ***/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #30475e; 
+  color: white;
+  width: 100%;
+  height: 80px;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row; 
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+  margin-right: 10px; 
+}
+
+.social div {
+  border: 1px black; 
+}
+
+.social div img {
+  width: 35px; 
+  height: 35px; 
+  padding: 10px;
+}
+
+/*** MEDIA QUERIES ***/
+
+@media (min-width: 650px) {
+  .information {
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto; 
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  nav {
+    display: inline-block; 
+  }
+
+  .hamburger {
+    display: none; 
+  }
+
+  .center {
+    padding: 100px; 
+    top: 50%
+  }
+  
+  .offers {
+    flex-direction: row; 
+    justify-content: space-between;
+  }
+
+  .steps {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 40px; 
+ }
+
+h2 {
+  font-size: 30px; 
+}
+
+h3 {
+   font-size: 20px; 
+}
+
+.steps {
+  flex-wrap: no-wrap; 
+}
+
+}
