@@ -11,6 +11,7 @@ a:link, a:visited {
   font-size: 20px;
   font-family: permanent marker;
 }
+
 .alphabet{
   font-size: 10px;
   line-height: 120%;
@@ -60,6 +61,7 @@ h3{
   margin: 10px;
   width: 250px;
   height: auto;
+  padding-left: 15px;
   padding: 10px;
   padding-bottom: 10px;
   text-align: center;
@@ -121,7 +123,7 @@ h3{
 
 @media (min-width: 1025px){
     p{
-      width: 680px;
+      width: 800px;
       margin: 20px auto 20px auto;
       margin-bottom: 50px;
       padding-top: 15px;
@@ -135,7 +137,7 @@ h3{
     }
     h1 { 
       margin-top: 5px;
-      padding-top: 10px;
+      padding-top: 50px;
       font-size: 80px;
     }
     h3{
@@ -154,12 +156,10 @@ h3{
     .flex-child{
       padding-left: 40px;
       padding-right: 40px;
-      padding-bottom: 60px;
       font-size: 10px;
     }
     .a,.b,.c,.d,.e,.f,.g,.h,.i,.J,.k,.l,.m,.n,.o,.p,.q,.r,.s,.t,.u,.v,.w,.x,.y,.z{
-      width: 250px;
+
       height: auto;
-      padding-bottom: 15px;
     }
   }
