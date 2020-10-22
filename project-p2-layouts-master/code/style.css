@@ -256,10 +256,14 @@ footer a:hover {
   }
 
   p {
-    justify-self: left;
+    width: 50%;
   }
-
 }
 
 @media (min-width: 1025px){
-	/*Desktop style*/
+  /*Desktop style*/
+  
+  p {
+    width: 40%;
+  }
+}
