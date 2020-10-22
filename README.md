@@ -13,7 +13,7 @@ html:
       <div class="flex-child a"><h3 id="a.">a.</h3></div>
       <div class="flex-child allan">
         <div class="image">
-        <img class="img" src="./Bilder/allan kingdom - lines.JPG" alt="alan kingdom">
+        <img class="img" src="./Bilder/allan kingdom - lines. JPG" alt="alan kingdom">
         <div class="img_overlay">
             <div class="artist">allan kingdom</div>
             <p class="title">
