@@ -10,5 +10,5 @@ If I had more time, I would add a menu which would collapse to a hamburger menu 
 
 ## View it live
 
-cherry-on-top.netlify.app
+https://cherry-on-top.netlify.app
 
