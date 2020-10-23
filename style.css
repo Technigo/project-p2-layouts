@@ -1,0 +1,207 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Bungee+Shade&family=Quicksand&display=swap');
+
+/* 
+font-family: 'Bungee Hairline', cursive;
+font-family: 'Bungee Shade', cursive;
+font-family: 'Quicksand', sans-serif; 
+*/ 
+
+body {
+  background-color: rgb(194, 216, 245);
+  font-family: 'Quicksand', sans-serif; 
+}
+
+header{
+  overflow: hidden;
+  width: 100%;
+  background:white;
+  padding: 20px;
+  color:black;
+ }
+
+
+h1{
+  font-family: 'Bungee Shade', cursive;
+  padding: 15px 0;
+}
+
+h2{
+  font-family: 'Bungee Hairline', cursive;
+  font-size: 25px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+h3{
+  font-family: 'Quicksand', sans-serif; 
+  font-size: 20px;
+  padding: 0 0 0 20px;
+}
+
+p{
+  font-size: 20px;
+  padding: 0 0 10px 20px;
+}
+
+.flex-container-home{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-home{
+  background-color: rgb(194, 216, 245);
+  padding: 10px;
+  flex: 100%;
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border: black solid .5px;
+  border-radius: 10px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.flex-item-home:hover .image {
+  opacity: 0.3;
+}
+
+.flex-item-home:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: rgb(194, 216, 245);
+  color: black;
+  padding: 35px 35px;
+  border: black solid .5px;
+  border-radius: 10px;
+}
+
+.icon{
+  background-color: white;
+  border-radius: 100%;
+  width: 50px;
+  padding: 15px;
+  margin: 20px 0 0 20px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.flex-container-r{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.flex-item-r, .flex-item-rs{
+  background-color: rgb(194, 216, 245);
+  padding: 10px;
+  flex: 100%;
+  position: relative;
+}
+
+footer{
+  width: 100%;
+  background: white;
+  color: black;
+  padding: 5px;
+  margin: 5px;
+}
+
+.social-icon{
+  height: 35px;
+  padding: 10px;
+  float: none;
+  padding: 10px 20px;
+}
+
+.footer-h2{
+  font-size: 13px;
+}
+
+.p-footer{
+  font-size: 13px;
+}
+
+
+/* For tablet: */
+@media (min-width: 600px) {
+  .flex-item-home{
+    flex: 45%;
+    }
+    .flex-item-rs{
+      flex:45%;
+    }
+    .flex-item-r{
+      flex:100%;
+    }
+    h2{
+      font-size: 28px;
+    }
+
+    h3{
+      font-size: 25px;
+    }
+    .footer-h2{
+      font-size: 18px;
+    }
+    .social-icon{
+      height: 35px;
+      padding: 10px;
+      float: none;
+      padding: 10px 20px;
+      }
+}
+
+
+/* For desktop: */
+@media (min-width: 768px) {
+    .flex-item-home{
+      flex: 25%;
+    }
+    .flex-item-r, .flex-item-rs{
+      flex: 45%;
+  }
+
+  h2{
+    font-size: 30px;
+  }
+
+  h3{
+    font-size: 20px;
+  }
+  .footer-h2{
+    font-size: 20px;
+  }
+
+    .social-icon{
+      height: 35px;
+      padding: 10px;
+      float: right;
+      
+}}
