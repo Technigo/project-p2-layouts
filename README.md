@@ -1,13 +1,12 @@
-# Project Name
+# The Cat Working Space
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The project is about a fictional Co Working Space - with cats. And coffee, of course. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I didn't get to costumize the style of the footer. I got it centered, but I do not understand, why the thing with the text decoration did not work. 
 
-## View it live
+Also want to know, if there is a better solution than to call the 
 
-Have you deployed your project somewhere? Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+.first-container .container like this. I adapted the style from the code-along-video. But it confused me. How can i rename it to understand it better - me and others?
+
