@@ -1,5 +1,248 @@
-/* If you can see a peach background, the css file is correctly linked. Feel free to change or remove this styling! */
+body { 
+  background-color:gainsboro;
+  color:black;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+}
 
-body {
-  background-color: peachpuff;
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+  line-height: 30px;
+  color:black;
+}
+
+h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+h3 {
+  font-size: 26px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h4 {
+font-size: 32px;
+font-weight: 100;
+margin-top: -16px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+margin-bottom: 16px;
+}
+
+.sub {
+  font-family: impact, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  width: 100%;
+  flex-direction: column; 
+  max-width: 2000px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  text-decoration: none;
+  background-color: gainsboro;
+  color: black;
+}
+
+/*** HEADER ***/
+
+header {
+  background: white;
+  height: 80px;
+  display: flex; 
+  align-items: center;
+  padding: 0 16px;}
+
+.hamburger {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 24px;
+}
+
+.hamburger div {
+width: 30px;
+height: 5px;
+background: black;
+border-radius: 5px;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+  margin: 5px;
+}
+nav { 
+display: none; 
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin-left: 20px;
+  font-family: monospace;
+  font-size: 15px;
+  
+}
+
+/*** FIRST CONTAINER ***/
+
+.first-container .container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-container img {
+    filter: brightness(130%);  
+    width: 300px;  
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: right;
+    flex-direction: column;
+    align-self: center;
+    padding: 20px;
+}
+
+.first-container div {
+  text-align: center;
+}
+
+/*** ALL BOXES ***/
+
+.box-container {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 24px;
+  width: 100%;
+  max-width: 2000px;
+}
+
+.box-container img {
+  width: 220px;
+  padding: 10px 10px 10px 10px;
+  border-radius:10%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.boxes a {
+  background: #fafafa;
+  border: 5px solid black;
+  border-radius: 20px;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  box-shadow: 12px 12px gainsboro;
+  padding: 20px 20px;
+  margin-bottom: 30px;
+}
+
+.boxes a div {
+  border: 2px solid; 
+  padding: 10px;  
+  border-radius: 10px;
+}
+ .circles {
+   display: flex;
+   justify-content: space-between;
+   margin: 16px;
+   margin-bottom: -16px;
+ }
+
+ .circles span {
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background:  #367db8;
+ }
+
+ .circles span:last-child{
+background-color: black;
+ }
+
+
+/*** HOVER EFFECTS ***/
+
+
+.boxes a:hover {
+  background-color: yellow;
+}
+
+.box-container:hover {
+  filter: grayscale (100%);
+}
+
+
+@keyframes scale {
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.boxes a:hover {
+  animation-name: scale;
+  animation-duration: 0.5s;
+}
+
+ /*** MEDIA QUERIES ***/
+
+ @media (min-width: 768px) { 
+ header {
+   justify-content: space-between;
+  }
+
+ nav {
+   display: inline-block;
+   justify-content: center;
+  }
+
+ .hamburger {
+   display: none;}
+}
+
+@media (min-width: 900px) {
+
+h1 {
+ text-align: center;
+}
+
+  .first-container .container{
+    align-items: space-around;
+    text-align: center;
+    
+  }
+.first-container {
+  align-items: center;
+}
+
+  .boxes a {
+    width: 25%;
+    flex-grow: 1;
+    margin: 16px; 
+  }
 }
