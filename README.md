@@ -1,6 +1,7 @@
 # Project Name
 
 For this project I set up a webpage using flexbox and made it responsive to work on different screen sizes.
+FYI: the recipe pages all have the same setup, just different content. No need to thoroughly check every single one, once you've seen one you've seen all!
 
 ## The problem
 
