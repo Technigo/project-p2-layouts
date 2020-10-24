@@ -1,5 +1,215 @@
-/* If you can see a peach background, the css file is correctly linked. Feel free to change or remove this styling! */
-
 body {
-  background-color: peachpuff;
+  background-color: #1d2125;
+  color: white;
+  font-family: helvetica;
+  margin: 0;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 32px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 15px;
+  padding-right: 5px;
+  margin: 5px;
+}
+
+/*** HEADER ***/
+
+header {
+  background-color: #24292d;
+  height: 80px;
+  display: flex;
+  align-items: center; 
+  padding: 5px 16px;
+}
+
+.hamburger {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 24px;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+header img {
+  width: 120px;
+}
+
+nav {
+  display: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 16px;
+
+}
+
+/*** WELCOME CONTAINER ***/
+
+.welcome-container {
+  background-image: url(assets/NissyenArts_Bandphoto_Guitar.png);
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  padding-top: 150px;  
+  text-align: center;
+
+ }
+
+.welcome-container button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.welcome-container button:hover {
+  background-color: lightgray;
+  color: black
+}
+
+.welcome-container button a {
+  text-decoration: none;
+  color: white;
+}
+
+/*** OFFERING CONTAINER ***/
+
+.offering-container {
+  background-color: white;
+  color: #1d2125;
+  padding: 15px 30px;
+  margin-top: 0px;
+  width: 100%;
+}
+
+.offering-container ul {
+  list-style-type: circle;
+  }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-card {
+  background-color: #fafafa;
+  border: 2px solid #24292d; 
+  border-radius: 16px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 12px 12px 0 0 #7b7e81;
+  padding: 16px;
+  margin: 32px;
+}
+
+.photo-information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.image-card img {
+  width: 100%;
+}
+
+.image-card .link {
+  margin: 5px;
+  background-color: black;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px;
+
+}
+
+.image-card .link a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  display: flex;
+  margin: 15px;
+}
+
+/*** MEDIA QUERIES ***/
+
+@media (min-width: 650px) {
+  header {
+    justify-content: space-between;
+  }
+  
+  nav {
+  display: inline-block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  .welcome-container {
+    height: 300px;
+   }
+
+
+
+}
+
+@media (min-width: 900px) {
+
+ .welcome-container button {
+   font-size: 20px;
+ }
+
+ .offering-container ul {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  }
+
+  .offering-container ul li {
+    padding: 5px;
+    padding-right: 10px;
+  }
+
+.image-card {
+  width: 25%;
+  flex-grow: 1;
+}
+
 }
