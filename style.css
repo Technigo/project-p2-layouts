@@ -115,7 +115,6 @@ a{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  background-color: black;
 }
 
 .flex-item-r, .flex-item-rs{
@@ -123,6 +122,18 @@ a{
   padding: 10px;
   flex: 100%;
   position: relative;
+}
+
+img{
+  border-radius: 10px;
+}
+
+.img-recipe-tablet, .img-recipe-desktop{
+  display: none;
+}
+
+.img-recipe-mobile{
+  display: block;
 }
 
 footer{
@@ -176,6 +187,14 @@ footer{
       float: none;
       padding: 10px 20px;
       }
+
+    .img-recipe-mobile, .img-recipe-desktop{
+        display: none;
+      }
+
+    .img-recipe-tablet{
+      display: block;
+    }
 }
 
 
@@ -199,9 +218,17 @@ footer{
     font-size: 20px;
   }
 
-    .social-icon{
+  .social-icon{
       height: 35px;
       padding: 10px;
       float: right;
-      
-}}
+}
+
+.img-recipe-mobile, .img-recipe-tablet{
+  display: none;
+}
+
+.img-recipe-desktop{
+  display: block;
+
+}
