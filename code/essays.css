@@ -1,0 +1,222 @@
+body {
+    background: #E6E8E9;
+    color: #000000;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0;
+  }
+  
+  /*** Header ***/
+  
+  header {
+    display: flex;
+    background: #24292d;
+    height: 60px;
+  }
+  
+  /*** Hamburger Menu ***/
+  
+  .hamburger-dropdown-menu {
+    position: fixed;
+    top: 8px;
+    left: 12px;
+    z-index: 1;
+  }
+  
+  .hamburger-dropdown-menu .toggler {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    z-index: 2;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+  }
+  
+  .hamburger-dropdown-menu .hamburger {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /*** Mid Hamburger line ***/
+  
+  .hamburger-dropdown-menu .hamburger > div {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+  }
+  
+  /*** Top & Bottom Hamburger Lines ***/
+  
+  .hamburger-dropdown-menu .hamburger > div:before,
+  .hamburger-dropdown-menu .hamburger > div:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+  }
+  
+  .hamburger-dropdown-menu .hamburger > div:after {
+    top: 10px;
+  }
+  
+  /*** Toggler animate ***/
+  
+  .hamburger-dropdown-menu .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+  }
+  
+  /*** Turn lines into X ***/
+  
+  .hamburger-dropdown-menu .toggler:checked + .hamburger > div:before,
+  .hamburger-dropdown-menu .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  
+  /*** Show dropdown Menu ***/
+  
+  .hamburger-dropdown-menu .toggler:checked ~ .menu {
+    visibility: visible;
+  }
+  
+  .hamburger-dropdown-menu .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: 0.75s;
+  }
+  
+  .hamburger-dropdown-menu .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition:  opacity 0.4s ease 0.4s;
+  }
+  
+  .hamburger-dropdown-menu .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hamburger-dropdown-menu .menu > div {
+    background: #24292d;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    padding-left: 20px;
+    padding-top: 40px;
+    transform: scale(0);
+    transition: all 0.4s ease;
+  }
+  
+  .hamburger-dropdown-menu .menu > div > div {
+    text-align: left;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  
+  .hamburger-dropdown-menu .menu > div > div > ul > li {
+    list-style: none;
+    color: #FFF;
+    font-size: 30px;
+    padding: 5px;
+  }
+  
+  .hamburger-dropdown-menu .menu > div > div > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+  }
+  
+  /*** Tablet/Desktop Menu ***/
+  
+  .desktop-menu {
+  display: none;
+  }
+  
+  .desktop-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 17px 0;
+    margin-right: 16px;
+  }
+  
+  .desktop-menu a:hover {
+    text-decoration: underline;
+  }
+
+  /*** Main Container ***/
+
+  .main-container {
+    display: flex;
+    margin: 0;
+    padding-left: 24px;
+  }
+
+  p {
+      font-size: 24px;
+  }
+  
+  /*** Footer ***/
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    background: #24292d;
+    height: 60px;
+  }
+  
+  footer a {
+    color: #FFF;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    margin-right: 16px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /*** Media Queries ***/
+  
+  @media (min-width: 668px) {  
+    /*Tablet style*/
+    header {
+      justify-content: flex-end;
+    }
+    
+    .desktop-menu {
+        display: flex;
+    }
+  
+    .hamburger-dropdown-menu {
+      display: none;
+    }
+  }
