@@ -1,0 +1,209 @@
+/* If you can see a peach background, the css file is correctly linked. Feel free to change or remove this styling! */
+
+body {
+  background-color: rgb(255, 248, 213);
+}
+
+header {
+  background-image: url('watermelon.JPG');
+  background-size: cover;
+  padding: 100px 0 100px 0;
+  text-align: center;
+}
+
+.header-text {
+  padding: 50px;
+  margin-top: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  color: white;
+}
+
+h1 {
+  display: right;
+  padding: 10px;  
+  margin-top: -100px;
+  margin-left: -200px;
+  float:right;   
+}
+
+h2 {
+  display: left;
+  padding: 10px;  
+  margin-top: -40px;
+  margin-left: -200px;
+  float:left;
+}
+
+nav {    
+  padding: 50px;
+  margin-top: 10px;    
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  }
+
+h3{
+  color: white;
+  font-weight: 200;
+  font-display: center;
+  background: rgb(124, 161, 91);
+  border: 20px;
+  padding: 10px;
+  margin-top: 100px; 
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+h4{
+  color:grey;
+}
+
+
+.daily-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+@media (max-width: 666px){
+  .daily-container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 667px) and (max-width: 1024){
+  .daily-container {
+    flex-direction: row;
+    flex-wrap: wrap;      
+  }
+
+  .food-img {
+    width: 150%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .daily-container {
+    flex-direction: row-reverse;
+  }
+}
+
+
+.daily-img img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.recipes-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  flex-flow: row wrap;
+}
+
+@media (max-width: 666px){
+  .recipes-container {
+    flex-direction: column;
+  }
+}
+@media (min-width: 667px) and (max-width: 1024){
+  .recipes-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .recipes-img {
+    width: 150%;
+  }
+}
+@media (min-width: 1025px) {
+  .recipes-container {
+    flex-direction: row-reverse;
+  }
+}
+
+.recipes-img img{
+  height: 250px;
+  width: 250px;
+  background-color: lightgrey;
+  box-shadow: 4px 4px 8px 4px grey;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+
+.facts-container{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+@media (max-width: 666px){
+  .facts-container {
+    flex-direction: column;
+  }
+}
+@media (min-width: 667px) and (max-width: 1024){
+  .facts-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .facts-img {
+    width: 150%;
+  }
+}
+@media (min-width: 1025px) {
+  .facts-container {
+    flex-direction: column-reverse;
+  }
+}
+
+.facts-img {
+  height: 550px;
+  width: 350px;
+  margin: 10px;
+  background-color: #ebebeb;
+  border-top: 1px solid #a1845c;
+}
+
+img{
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+h4{
+  color: #a1845c;
+  margin: 10px;
+  font-family: "Georgia";
+  font-size: 20px;
+}
+
+span {
+  color: darkgoldenrod;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+p {
+  margin: 10px;
+  font-family: "Georgia";
+  font-size: 12px;
+}
+
+.facts-img:hover {
+  background-color: #dddddd;
+}
+
+.facts-img:hover img {
+  opacity: 0.9;
+}
