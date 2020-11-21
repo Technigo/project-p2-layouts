@@ -1,0 +1,277 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;600;900&display=swap');
+
+body {
+  background-color:	rgb(177, 212, 195);
+}
+
+img {
+  width: 60%;
+  border-radius: 50%;
+}
+
+.center {
+  display: block;
+  margin-left:auto;
+  margin-right: auto; 
+  width: 50%; 
+}
+
+#mySidenav a {
+  position: absolute;
+  left: -40px; 
+  transition: 0.3s; 
+  padding: 40px; 
+  margin: 50px; 
+  width: 50px; 
+  height: 50px;
+  text-decoration: none; 
+  font-size: 14px; 
+  font-family: 'Roboto Slab', serif ;
+  font-weight: bolder;
+  color: rgb(249, 250, 249); 
+  border-radius: 50%; 
+  text-align: center;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+#mySidenav a:hover {
+  left: 0; 
+}
+
+#HOME {
+  top: 0px;
+  background-color:rgb(205, 241, 229);
+  margin-top: 120px; 
+  margin-bottom: 120px;
+}
+
+#IDEE {
+  top: 150px;
+  background-color: rgb(162, 216, 197);
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+#FRAGEBOGEN {
+  top: 300px;
+  background-color:rgb(140, 186, 172);
+  margin-top: 150px;
+  margin-bottom: 120px; 
+  margin-left: 2px;
+}
+
+#ÜBER {
+  top: 450px;
+  background-color:	rgb(124, 180, 156); 
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+#PORTFOLIO{
+  top: 600px; 
+  background-color: rgb(34, 90, 71);
+  margin-top: 120px; 
+  margin-bottom: 120px; 
+  font-size: 13px; 
+}
+
+h2 {
+  color:rgb(108, 164, 140);
+  font-family: 'Roboto Slab', serif; 
+  font-size: 90px;
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 5px;
+  padding-left: 30px;
+}
+
+p {
+ color: rgb(108, 164, 140);
+ font-family: 'Roboto Slab', serif;
+ font-size: 30px;
+ text-align: center;
+ margin-bottom: 5px;
+ margin-top: 5px; 
+ padding-top: 2px;
+ padding-left: 300px;
+ padding-right: 250px;
+ padding-bottom: 20px;
+}
+
+.fa {
+padding: 10px;
+width: 20px;
+height: 20px;
+text-align: center;
+margin: 5px
+}
+
+.fa:hover {
+opacity: 0.5;
+}
+
+.fa-instagram {
+text-align: center;
+background:rgb(251, 221, 218);
+color:rgb(249, 250, 249);
+border-radius:50%; 
+font-size: 20px; 
+font-weight: bolder;
+line-height: 100%;
+}
+
+.link2 {
+text-align: justify;
+color: rgb(108, 164, 140)}
+
+.woman {
+  text-align: center;
+}
+
+.woman a {
+  text-align: center; 
+  line-height: 20%;
+  font-size: 30px;
+  font-family: 'Roboto Slab', serif;
+  text-decoration: none;
+  color:rgb(249, 250, 249);
+  margin: 2px;  
+}
+
+.ul {
+  list-style-type: circle;
+  text-align: center;
+  padding: 10px;
+}
+
+.infomum {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.infobild {
+  width: 100%;
+}
+
+.info {
+  text-align: left;
+  font-size: 25px; 
+  font-family: 'Roboto Slab', serif ;
+  line-height: 200%;
+  color: rgb(108, 164, 140);
+  margin: 60px; 
+  height: 300px;
+  width: 300px; 
+  border-radius: 50%; 
+  padding: 50px; 
+  background-color: rgb(140, 186, 172);
+  box-shadow: 2px 2px 8px 2px  rgb(249, 250, 249); 
+}
+
+.flex-child {
+  color: rgb(108, 164, 140);
+  margin-left: 500px;
+  margin-bottom: 20px;  
+  padding: 10px; 
+  height: 360px;
+  width: 360px;  
+  background-color: rgb(140, 186, 172);
+  box-shadow: 2px 2px 2px 2px  rgb(249, 250, 249);  
+}
+
+.flex-brother {
+  text-align: right;
+  font-size: 11px; 
+  font-family: 'Roboto Slab', serif; 
+  margin: 0px; 
+  padding: 5px; 
+  color:rgb(21, 1, 44);
+}
+
+.flex-bild {
+  width: 40%;
+  padding: 20px; 
+}
+
+.testparent {
+  display: flex;
+  height: 700px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.testbox {
+  margin: 20px;
+  width: 340px;
+  height: 340px;
+  background: rgb(108, 164, 140);
+  padding: 10px;
+  background-color: rgb(140, 186, 172);
+  box-shadow: 2px 2px 2px 2px  rgb(249, 250, 249);
+}
+
+@media (min-width: 668px) and (max-width: 1024px) {
+  .sidenav {
+    width: 80%; 
+    height: auto; 
+    flex-direction: column; 
+
+  }
+  .testbox {
+    width: 200px;
+    height: 350px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  h2 {
+    font-size: 10px;
+  }
+ 
+}
+
+@media (max-width: 668px) {
+  .sidenav {
+    width: 80%; 
+    height: auto; 
+    position: relative; 
+    display: flex;
+  }
+
+  .testbox {
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 300px;
+    height: 340px;
+    align-items: flex-end;
+  }
+    
+  h2 {
+    font-size: 10px;
+  }
+
+  .center {
+    width: 80%; 
+    margin-top: 100px; 
+  }
+  }
+
+form {
+  text-align: center;
+  }
+
+label { 
+  font-size: 25px; 
+  font-family: 'Roboto Slab', serif;
+  color:rgb(108, 164, 140);
+  }
+
+input { 
+  font-size: 24px; 
+  font-family: 'Roboto Slab', serif; 
+  border: solid 5px rgb(140, 186, 172);
+}
+    
