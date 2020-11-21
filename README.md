@@ -1,4 +1,4 @@
-# Project Name
+# Mobile-friendly website - yksi
 
 Replace this readme with your own information about your project.
 
