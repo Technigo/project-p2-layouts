@@ -1,5 +1,205 @@
-/* If you can see a peach background, the css file is correctly linked. Feel free to change or remove this styling! */
-
 body {
-  background-color: peachpuff;
+  font-family: 'Rubik', sans-serif;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.container {
+  max-width: 1125px;
+  margin: 0 auto;
+}
+
+/*** HEADER ***/
+
+header {
+  background-color: white;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.hamburger {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 24px;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 5px;
+  background: #444448;
+}
+
+.screen {
+  width: 180px;
+  display: none;
+}
+
+.mobile {
+  width: 42px;
+}
+
+header p {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #444448;
+  padding: 0 16px;
+}
+
+nav {
+  display: none; 
+}
+
+nav a {
+  color: #444448;
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+
+/*** SECTION GALLERY ***/
+
+.gallery .container {
+  display: flex;
+  margin: 0%;
+  background: #444448;
+  flex-flow : wrap;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.gallery a {
+  width: 100%;
+  height: auto;
+  flex-flow : column wrap;
+  align-items: center;
+  text-decoration: none;
+  margin: 0;
+  font-family: bungee;
+}
+
+.gallery a :hover {
+  opacity: 20%;
+}
+
+.gallery-item {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+h2 {
+  position: absolute;
+  color: white;
+  padding-bottom: 40px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/*** FOOTER ***/
+
+.footer-card span {
+  width: 100%;
+  height: 300px;
+  background-color:blue;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.footer-card button {
+  background-color: white;
+  color: yellow;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: none;
+  margin-left: 20px;
+  position: absolute;
+}
+
+footer {
+  display: none;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+button {
+  display: none;
+  background-color: #444448;
+  color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: none;
+  margin-left: 20px;
+}
+
+i {
+  display: none;
+  color: white;
+  size: 5px;
+  text-decoration: none;
+  border: none;
+}
+
+/*** MEDIA QUERIES ***/
+
+@media (min-width: 650px) {
+  .mobile {
+    display: none;
+  }
+  .screen {
+    display: inline-block;
+  }
+  .gallery-item {
+    max-width: 50%;
+  }
+
+}
+
+@media (min-width: 900px) {
+
+  header {
+    height: 100px;
+  }
+
+  nav {
+    display: inline-block;
+  }
+  .hamburger {
+    display: none;
+  }
+  header p {
+    order: -1;
+  }
+
+  .gallery {
+    max-height: 1360px;
+  }
+
+  .gallery-item {
+    max-width: 33%;
+    margin: 0 auto;
+  }
+
+  .footer-card {
+    display: none;
+  }
+
+  button {
+    display: inline-block;
+  }
+
 }
