@@ -1,12 +1,21 @@
-# Project Name
+# Project Name - Flower Shop / Subscription Service
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+For project #2, I reused the code I've written for the first project. 
+Project #2 focusses on the product category page '/our-flowers.html'.
+Therefore, please ignore the other pages. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+This page is intended to show a variety of products, in 2 different styles. 
+
+The mobile version contains product cards that are aligned in columns, with an image on the left and further details on the right. 
+
+The tablet/desktop version displays multiple products in a row, with the product details below the image. 
+
+In addition to that, the background color and borders of the product cards change when adjusting the browser size. 
+
+Further, the full navigation bar and extended headings only show in the desktop version. 
+The mobile version shows a hamburger navigation and only a short heading. 
 
 ## View it live
 
