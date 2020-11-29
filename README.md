@@ -1,3 +1,7 @@
+Project can be found here: 
+https://hungry-murdock-95f861.netlify.app/our-flowers.html
+
+
 # Project Name - Flower Shop / Subscription Service
 
 For project #2, I reused the code I've written for the first project. 
