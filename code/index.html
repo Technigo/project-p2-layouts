@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Wanda's portfolio</title>
   <script src="https://kit.fontawesome.com/9b3c5431f4.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com"> 
@@ -12,42 +12,56 @@
 <body>
 
   <header>
-    <img src="./Images/olive-design-a.gif" class="screen" alt="Logo Olive">
-    <img src="./Images/olive-design-mobile.gif" class="mobile" alt="Logo Olive">
+    <a href="./index.html">
+      <img src="./Images/olive-design-a.gif" class="screen" alt="Logo Olive">
+      <img src="./Images/olive-design-mobile.gif" class="mobile" alt="Logo Olive">
+    </a>
     <p>Welcome to <br>
         Wanda's portfolio</p>
-    <nav>
-      <a href="">Work</a>
-      <a href="">About Olive</a>
-      <a href="">About Wanda</a>
-    </nav>
-    <div class="hamburger">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+
+        <nav class="navigation-desktop">
+          <a href="./about-olive.html">About Olive</a>
+          <a href="./about-wanda.html">About Wanda</a>
+          <a href="./draft.html">Draft</a>
+        </nav>
+
+        <nav class="navigation-mobile" role="navigation-mobile">
+          <div id="menuToggle">
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+              <a href="./about-olive.html"><li>About Olive</li></a>
+              <a href="./about-wanda.html"><li>About Wanda</li></a>
+              <a href="./draft.html"><li>Draft</li></a>
+            </ul>
+          </div>
+        </nav>
   </header>
 
   <section class="gallery">
     <div class="container">
-      <a class="gallery-item" href="">
-        <img src="./Images/Kina_BC.jpg" alt="Kina Beach businesscard">
+      <a class="gallery-item" href="./kina-case.html">
+        <img src="./Images/kina-bc.jpg" alt="Kina Beach businesscard">
         <h2>Corporate Design</h2>
       </a>
-      <a class="gallery-item" href="">
+      <a class="gallery-item" href="./plan-case.html">
         <img src="./Images/plan-poster.jpg" alt="Poster von Plan International">
         <h2>Direct Mailing</h2>
       </a>
-      <a class="gallery-item" href="">
-        <img src="./Images/BeldonaXmas.jpg" alt="Beldona shopping bag">
+      <a class="gallery-item" href="./beldona-case.html">
+        <img src="./Images/beldonaXmas.jpg" alt="Beldona shopping bag">
         <h2>Promotion</h2>
       </a>
-      <a class="gallery-item" href="">
+      <a class="gallery-item" href="./stra-case.html">
         <img src="./Images/stra-logo-sw.jpg" alt="Logo Sea Turtle Rescue Alliance">
         <h2>Logo Design</h2>
       </a>
-      <a class="gallery-item" href="">
-        <img src="./Images/zuerchertierschutz-katze-kuh.jpg" alt="Zuercher Tierschutz Inserate">
+      <a class="gallery-item" href="./ztierschutz-case.html">
+        <img src="./Images/zuerchertierschutz-kuh.png" alt="Zuercher Tierschutz Inserate">
         <h2>Social Advertising</h2>
       </a>
       <a class="gallery-item" href="">
@@ -59,38 +73,42 @@
         <h2>Direct Marketing</h2>
       </a>
       <a class="gallery-item" href="">
-        <img src="./Images/sfh-poster.jpg" alt="Schweizer Fluechtlingshilfe Plakat">
+        <img src="./Images/sfh-poster-1.png" alt="Schweizer Fluechtlingshilfe Plakat">
         <h2>Social Advertising</h2>
       </a>
-      <a class="gallery-item" href="">
-        <img src="./Images/heidi-musical-logo.jpg" alt="Logo Heidi Musical">
+      <a class="gallery-item" href="./heidi-case.html">
+        <img src="./Images/heidi-folder-cover.jpg" alt="Logo Heidi Musical">
         <h2>Promotion</h2>
       </a>
-      <a class="gallery-item footer-card" href="">
-        <span>
-          <button class="icon-container footer-card">
-            <i class="fas fa-phone"></i>
-          </button>
-          <button class="icon-container footer-card">
-            <i class="fas fa-envelope-open-text"></i>
-          </button>
-          <button class="icon-container footer-card">
-            <i class="fa fa-map-marker-alt"></i>
-          </button>
-        </span>
-      </a>
+      <div class="gallery-item">
+        <div class="footer-card">
+          <a class="icon-link" href="./contact.html">
+            <button class="icon-container">
+              <i class="fas fa-phone"></i>
+            </button>
+            <button class="icon-container">
+              <i class="fas fa-envelope-open-text"></i>
+            </button>
+            <button class="icon-container">
+              <i class="fa fa-map-marker-alt"></i>
+            </button>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
   <footer>
-    <button class="icon-container">
-      <i class="fas fa-phone"></i>
-    </button>
-    <button class="icon-container">
-      <i class="fas fa-envelope-open-text"></i>
-    </button>
-    <button class="icon-container">
-      <i class="fa fa-map-marker-alt"></i>
+      <a class="icon-link" href="./contact.html">
+        <button class="icon-container">
+          <i class="fas fa-phone"></i>
+        </button>
+        <button class="icon-container">
+          <i class="fas fa-envelope-open-text"></i>
+        </button>
+        <button class="icon-container">
+          <i class="fa fa-map-marker-alt"></i>
+      </a>
     </button>
   </footer>
   
