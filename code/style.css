@@ -42,13 +42,13 @@ header p {
 }
 
 .screen {
-  width: 180px;
+  width: 50px;
   display: none;
   margin-bottom: 16px;
 }
 
 .mobile {
-  width: 42px;
+  width: 65px;
   margin: 5px 0 0 20px;
 }
 
@@ -194,7 +194,10 @@ nav a:hover {
   flex-flow : column wrap;
   align-items: center;
   margin: 0;
-  font-family: bungee;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
 }
 
 .gallery-item {
@@ -251,6 +254,18 @@ h2 {
   width: 100vw;
   height: 400px;
   object-fit: cover;
+}
+
+
+/*** SECTION BLOG ***/
+
+.blog-item {
+  margin: 50px;
+
+}
+
+.blog-item p {
+  font-size: x-large;
 }
 
 
@@ -369,7 +384,7 @@ footer i {
 
   header p {
     text-align: center;
-    margin-right: 160px;
+    margin-right: 50px;
   }
 
   .mobile {
@@ -378,6 +393,7 @@ footer i {
 
   .screen {
     display: inline-block;
+    width: 65px;
     margin: 5px 0 0 0;
   }
 
@@ -437,8 +453,8 @@ footer i {
   }
 
   .screen {
-    width: 200px;
-    margin-right: 155px;
+    width: 70px;
+    margin-right: 170px;
   }
 
   nav {
@@ -536,14 +552,14 @@ footer i {
   .cases-item-1 p {
     margin-top: 0px;
     margin-left: 100px;
-    max-width: 300px;
+    max-width: 600px;
     text-align: left;
   }
 
   .cases-item-1 h1 {
     margin-top: 200px;
     margin-left: 85px;
-    max-width: 300px;
+    max-width: 600px;
     text-align: left;
   }
 
