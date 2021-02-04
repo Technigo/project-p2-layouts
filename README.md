@@ -10,4 +10,4 @@ I solved the problem with flexbox and a lot of testing
 
 ## View it live
 
-I put my portfolio on nelify: wandas-portfolio.netlify.app
+I put my portfolio on nelify: wanda-design.ch
