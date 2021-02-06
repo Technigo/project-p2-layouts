@@ -19,7 +19,6 @@ h1 {
   color: #444448;
   font-size: 16px;
   font-weight: normal;
-  text-align: center;
 }
 
 h2 {
@@ -27,14 +26,13 @@ h2 {
   font-size: 16px;
   line-height: 150%;
   color: #444448;
-  text-align: center;
 }
 
 p {
   font-size: 14px;
   color: #444448;
-  text-align: center;
 }
+
 
 /*** HEADER ***/
 
@@ -57,13 +55,13 @@ header p {
 }
 
 .screen {
-  width: 50px;
+  width: 40px;
   display: none;
   margin-bottom: 16px;
 }
 
 .mobile {
-  width: 65px;
+  width: 50px;
   margin: 5px 0 0 20px;
 }
 
@@ -210,10 +208,15 @@ nav a:hover {
   justify-content: flex-end;
 }
 
+.gallery-item:hover {
+  opacity: 80%;
+}
+
 #gallery-h2 {
   position: absolute;
   color: white;
   padding-bottom: 40px;
+  text-align: center;
 }
 
 .gallery-item img {
@@ -240,12 +243,8 @@ nav a:hover {
 .cases-item-1 {
   width: 100vw;
   height: 400px;
-  padding: 50px;
   background-color: rgb(245, 245, 234);
-}
-
-.cases-item-1 h1 {
-  margin-top: 30px;
+  padding: 50px;
 }
 
 .cases-item-2 {
@@ -271,69 +270,74 @@ nav a:hover {
 }
 
 .blog {
-  width: 100vw;
+  max-width: 100%;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  flex-flow: wrap;
   justify-content: center;
-  padding-left: 50px;
-  padding-right: 50px;
+  align-items: center;
+  align-content: center;
 }
 
 .blog-item-1 {
-  max-width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  max-width: 700px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .blog-item-1 img {
   width: 100%;
-  height: 400px;
+  height: auto;
+  object-fit: cover;
+  object-position: 20% 10%;
+}
+
+.blog-item-1 video {
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
-#portrait {
-  max-width: 400px;
-  height: 500px;
-}
-
 .blog-item-2 {
-  align-content: center;
-  height: 500px;
   width: 100%;
+  height: auto;
+  max-width: 700px;
+  padding: 30px;
 }
 
 .blog-item-2 h1, h2, p {
   font-weight: 100;
-  text-align: center;
-  padding-right: 30px;
-  padding-left: 30px;
+  text-align: left;
 }
 
 .blog-item-3 {
-  max-width: 100%;
+  max-width: 700px;
 }
 
 .blog-item-3 p, h2, h1 {
-  max-width: 100%;
-  text-align: center;
+  font-weight: 100;
+  text-align: left;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .blog-item-4 {
-  max-width: 100%;
+  max-width: 700px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.blog-item-4 iframe {
-  width: 100vw;
-  max-width: 100%;
-  height: 300px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+.blog-item-4 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: 20% 10%;
 }
 
-.blog-item-4 p {
-  max-width: 100%;
-  text-align: center;
+#portrait {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding: 0 50px;
 }
 
 .blog a:link {
@@ -467,13 +471,16 @@ footer i {
     max-width: 50px;
   }
 
+  .blog-item-2 h1, h2, p {
+    font-size: 14px;
+  }
+
 }
 
 @media (min-width: 650px) {
 
   header {
     margin: 0 30px;
-    justify-content: space-between;
   }
 
   header p {
@@ -486,7 +493,7 @@ footer i {
 
   .screen {
     display: inline-block;
-    width: 65px;
+    width: 50px;
     margin: 5px 0 0 0;
   }
 
@@ -510,21 +517,43 @@ footer i {
   .cases-item-1 {
     max-width: 50%;
     height: 450px;
-    padding: 30px;
+  }
+
+  .cases-item-1 h1 {
+    top: 30px;
+    left: 30px;
+    padding: 0%;
   }
 
   .cases-item-2 {
-    max-width: 50%;
+    max-width: 100%;
     height: 450px;
   } 
 
   .cases-item-3 {
-    max-width: 50%;
+    max-width: 100%;
     height: 450px;
   }
 
-  .blog-item-4 iframe {
-    height: 450px;
+  .blog-item-1 img {
+    height: auto;
+  }
+
+  .blog-item-2 h1, h2, p {
+    padding: 0 70px;
+    text-align: center;
+  }
+
+  .blog-item-4 {
+    height: auto;
+  }
+
+  .blog-item-4 img {
+    height: auto;
+  }
+
+  #portrait {
+    padding: 0 150px;
   }
 
   .footer-card {
@@ -539,31 +568,31 @@ footer i {
 @media (min-width: 900px) {
 
 
+  header {
+    height: 150px;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   header p {
     text-align: left;
+    margin-top: 15px;
     margin-left: 16px;
     margin-right: 0%;
+    order: -1;
   }
 
   .screen {
-    width: 70px;
-    margin-right: 170px;
+    width: 60px;
+    margin-right: 160px;
   }
 
   nav {
     display: inline-block;
     margin-right: 16px;
-    margin-bottom: -16px;
   }
 
-  header {
-    height: 150px;
-    margin-top: 30px;
-  }
-
-  header p {
-    order: -1;
-  }
 
   .gallery .container {
     height: 1500px;
@@ -579,7 +608,7 @@ footer i {
   }
 
   .cases {
-    height: 1000px;
+    height: auto;
   }
 
   .cases-hero {
@@ -592,18 +621,18 @@ footer i {
     height: 500px;
   }
 
-  .cases-item-1 p {
+  .cases-item-1 h1, p {
     margin-top: 0px;
-    margin-left: 70px;
     max-width: 600px;
     text-align: left;
   }
 
   .cases-item-1 h1 {
-    margin-top: 150px;
-    margin-left: 100px;
-    max-width: 600px;
-    text-align: left;
+    margin-top: 250px;
+  }
+
+  .cases-item-1 p {
+    padding: 0%;
   }
 
   .cases-item-2 {
@@ -620,25 +649,37 @@ footer i {
     max-width: 100vw;
   }
 
-  .blog {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-  }
-
   .blog-item-1 {
-    max-width: 50%;
+    width: 100%;
+    padding: 30px 10px;
   }
 
   .blog-item-2 {
-    max-width: 50%;
+    position: relative;
+    align-self: start;
+    width: 50%;
+    max-width: 700px;
+  }
+
+  .blog-item-2 h1, h2, p {
+    padding-left: 0px;
+    padding-right: 50px;
+    text-align: left;
+  }
+
+  .blog-item-3 {
+    width: 100%;
   }
 
   .blog-item-4 {
-    max-width: 800px;
+    align-self: start;
+    width: 50%;
+    max-width: 300px;
+    max-height: 450px;
+  }
+
+  #portrait {
+    padding: 0 50px;
   }
 
   .footer-card {
@@ -662,10 +703,6 @@ footer i {
     height: 600px;
   }
 
-  .cases {
-    height: 1200px;
-  }
-
   .cases-hero {
     max-width: 50%;
     height: 600px;
@@ -674,7 +711,14 @@ footer i {
   .cases-item-1 {
     max-width: 50%;
     height: 600px;
-    padding: 0%;
+  }
+
+  .cases-item-1 h1, p {
+    max-width: 400px;
+  }
+
+  .cases-item-1 h1 {
+    margin-top: 350px;
   }
 
   .cases-item-2 {
@@ -689,6 +733,30 @@ footer i {
 
   .blog .container {
     max-width: 1100px;
+  }
+
+  .blog-item-2 {
+    margin-top: 80px;
+  }
+
+}
+
+@media (min-width: 1690px) {
+
+  .blog-item-1 {
+    max-width: 750px;
+  }
+
+  .blog-item-2 {
+    max-width: 750px;
+  }
+
+  .blog-item-3 {
+    max-width: 750px;
+  }
+
+  .blog-item-4 {
+    max-width: 750px;
   }
 
 }
@@ -726,7 +794,7 @@ footer i {
   }
 
   .cases-item-1 h1 {
-    margin-top: 400px;
+    margin-top: 500px;
   }
 
   .cases-item-2 {
