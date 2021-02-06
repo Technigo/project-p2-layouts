@@ -52,6 +52,7 @@ header p {
   letter-spacing: 3px;
   color: #444448;
   text-align: center;
+  padding: 0%;
 }
 
 .screen {
@@ -247,6 +248,10 @@ nav a:hover {
   padding: 50px;
 }
 
+.cases-item-1 h1 {
+  padding: 0%;
+}
+
 .cases-item-2 {
   width: 100vw;
   height: 400px;
@@ -301,7 +306,7 @@ nav a:hover {
   width: 100%;
   height: auto;
   max-width: 700px;
-  padding: 30px;
+  padding: 50px;
 }
 
 .blog-item-2 h1, h2, p {
@@ -311,13 +316,16 @@ nav a:hover {
 
 .blog-item-3 {
   max-width: 700px;
+  padding: 40px;
+}
+
+.blog-item-3 h1 {
+  padding: 0;
 }
 
 .blog-item-3 p, h2, h1 {
   font-weight: 100;
   text-align: left;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 .blog-item-4 {
@@ -523,15 +531,23 @@ footer i {
     top: 30px;
     left: 30px;
     padding: 0%;
+    text-align: left;
+  }
+
+  .cases-item-1 p {
+    top: 30px;
+    left: 30px;
+    padding: 0%;
+    text-align: left;
   }
 
   .cases-item-2 {
-    max-width: 100%;
+    max-width: 50%;
     height: 450px;
   } 
 
   .cases-item-3 {
-    max-width: 100%;
+    max-width: 50%;
     height: 450px;
   }
 
@@ -542,6 +558,10 @@ footer i {
   .blog-item-2 h1, h2, p {
     padding: 0 70px;
     text-align: center;
+  }
+
+  .blog-item-3 h1, p {
+    padding: 0 70px;
   }
 
   .blog-item-4 {
@@ -585,7 +605,7 @@ footer i {
 
   .screen {
     width: 60px;
-    margin-right: 160px;
+    margin-right: 135px;
   }
 
   nav {
@@ -659,16 +679,14 @@ footer i {
     align-self: start;
     width: 50%;
     max-width: 700px;
-  }
-
-  .blog-item-2 h1, h2, p {
     padding-left: 0px;
     padding-right: 50px;
-    text-align: left;
   }
+
 
   .blog-item-3 {
     width: 100%;
+    padding: 0 100px;
   }
 
   .blog-item-4 {
