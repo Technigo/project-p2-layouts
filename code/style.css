@@ -45,7 +45,7 @@ header {
   padding: 0;
 }
 
-header p {
+#header-text {
   position: relative;
   z-index: 3;
   text-transform: uppercase;
@@ -348,24 +348,34 @@ nav a:hover {
   padding: 0 50px;
 }
 
-.blog a:link {
+#contact {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #444448;
+  font-weight: 100;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+#contact a:link {
   font-family: 'Rubik', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #232323;
   text-decoration: none;
 }
 
-.blog a:visited {
+#contact a:visited {
   color: #464545;
   text-decoration: none;
 }
 
-.blog a:hover {
+#contact a:hover {
   background-color: yellow;
   text-decoration: none;
 }
 
-.blog a:active {
+#contact a:active {
   color: #464545;
   text-decoration: none;
   background-color: yellow;
@@ -470,7 +480,7 @@ footer i {
     width: 15px;
     height: 3px;
   }
-  header p {
+  #header-text {
     font-size: 14px;
     letter-spacing: 2px;
   }
@@ -491,7 +501,7 @@ footer i {
     margin: 0 30px;
   }
 
-  header p {
+  #header-text {
     text-align: center;
   }
 
@@ -595,7 +605,7 @@ footer i {
     align-items: center;
   }
 
-  header p {
+  #header-text {
     text-align: left;
     margin-top: 15px;
     margin-left: 16px;
@@ -648,7 +658,7 @@ footer i {
   }
 
   .cases-item-1 h1 {
-    margin-top: 250px;
+    margin-top: 200px;
   }
 
   .cases-item-1 p {
@@ -736,7 +746,7 @@ footer i {
   }
 
   .cases-item-1 h1 {
-    margin-top: 350px;
+    margin-top: 280px;
   }
 
   .cases-item-2 {
@@ -781,7 +791,7 @@ footer i {
 
 @media (min-width: 2501px) {
 
-  header p {
+  #header-text {
     margin-left: -25px;
     }
 
@@ -812,7 +822,7 @@ footer i {
   }
 
   .cases-item-1 h1 {
-    margin-top: 500px;
+    margin-top: 350px;
   }
 
   .cases-item-2 {
