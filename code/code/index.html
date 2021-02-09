@@ -1,21 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanda's portfolio</title>
+  <script src="https://kit.fontawesome.com/9b3c5431f4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Rubik:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <h1>hello classmates</h1>
-        <h2>this is another line</h2>
-        <h3>this is now smaller</h3>
-    </div>
 
-<!--this is not seen by the browser-->
-    <div>
-        <p>we write a lot of <a href="http://goggle.com">information</a> here</p>
-        <img src="./images/beach.jpg" alt="picture of a beach">
+  <header>
+    <a href="./index.html">
+      <img src="./Images/w-logo-clearyellow.png" class="screen" alt="Logo Olive">
+      <img src="./Images/w-logo-clearyellow.png" class="mobile" alt="Logo Olive">
+    </a>
+    <p id="header-text">Welcome to <br>
+        Wanda's portfolio</p>
+
+        <nav class="navigation-desktop">
+          <a href="./about.html">About</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./index.html">Work</a>
+        </nav>
+
+        <nav class="navigation-mobile" role="navigation-mobile">
+          <div id="menuToggle">
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+              <a href="./about.html"><li>About</li></a>
+              <a href="./contact.html"><li>Contact</li></a>
+              <a href="./index.html"><li>Work</li></a>
+            </ul>
+          </div>
+        </nav>
+  </header>
+
+  <section class="gallery">
+    <div class="container">
+
+      <a class="gallery-item" href="./rebel-case.html">
+        <img src="./Images/rebel-earth.jpg" alt="Rebel Communication">
+        <h2 id="gallery-h2">Rebel Communication</h2>
+      </a>
+
+      <a class="gallery-item" href="./plan-case.html">
+        <img src="./Images/plan-poster.jpg" alt="Poster von Plan International">
+        <h2 id="gallery-h2">Plan International</h2>
+      </a>
+
+      <a class="gallery-item" href="./stra-case.html">
+        <img src="./Images/stra-logo-sw.jpg" alt="Logo Sea Turtle Rescue Alliance">
+        <h2 id="gallery-h2">Sea Turtle Rescue Alliance</h2>
+      </a>
+
+      <a class="gallery-item" href="./peace-case.html">
+        <img src="./Images/greenpeace-mailing.jpg" alt="Streuwurf mit Peaceflagge">
+        <h2 id="gallery-h2">Greenpeace</h2>
+      </a>
+
+      <a class="gallery-item" href="./ztierschutz-case.html">
+        <img src="./Images/zuerchertierschutz-kuh.png" alt="Zuercher Tierschutz Inserate">
+        <h2 id="gallery-h2">Zürcher Tierschutz</h2>
+      </a>
+
+      <a class="gallery-item" href="./sfh-case.html">
+        <img src="./Images/sfh-1.jpg" alt="Schweizer Fluechtlingshilfe Plakat">
+        <h2 id="gallery-h2">Flüchtlingshilfe</h2>
+      </a>
+
+      <a class="gallery-item" href="./plan-kampagne-case.html">
+        <img src="./Images/plan-kampagne-1.jpg" alt="Inserat mit Ruth Dreifuss">
+        <h2 id="gallery-h2">Plan International</h2>
+      </a>
+
+      <a class="gallery-item" href="medela-app-case.html">
+        <img src="./Images/medela-app-poster.jpg" alt="Medela Plakat">
+        <h2 id="gallery-h2">Medela</h2>
+      </a>
+
+      <a class="gallery-item" href="./kina-case.html">
+        <img src="./Images/kina-bottles.jpg" alt="Kina Beach Vineyard Business Card">
+        <h2 id="gallery-h2">Kina Beach Vineyard</h2>
+      </a>
+
+      <div class="gallery-item">
+        <div class="footer-card">
+          <a class="icon-link" href="./contact.html">
+            <button class="icon-container">
+              <i class="fas fa-phone"></i>
+            </button>
+            <button class="icon-container">
+              <i class="fas fa-envelope-open-text"></i>
+            </button>
+            <button class="icon-container">
+              <i class="fa fa-map-marker-alt"></i>
+            </button>
+          </a>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <footer>
+    <button class="icon-container">
+      <a href="./contact.html"><i class="fas fa-phone"></i></a>
+    </button>
+    <button class="icon-container">
+      <a href="./contact.html"><i class="fas fa-envelope-open-text"></i></a>
+    </button>
+    <button class="icon-container">
+      <a href="./contact.html"><i class="fa fa-map-marker-alt"></i></a>
+    </button>
+  </footer>
+  
 </body>
 </html>
