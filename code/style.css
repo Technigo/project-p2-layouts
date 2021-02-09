@@ -635,7 +635,7 @@ footer i {
     margin: 0 auto;
   }
 
-  
+
 
   .gallery-item img {
     height: 500px;
@@ -655,18 +655,19 @@ footer i {
     height: 500px;
   }
 
-  .cases-item-1 h1, p {
-    margin-top: 0px;
+  .cases-item-1 h1 {
+    position: relative;
     max-width: 600px;
     text-align: left;
-  }
-
-  .cases-item-1 h1 {
-    margin-top: 200px;
+    margin-top: 180px;
   }
 
   .cases-item-1 p {
-    padding: 0%;
+    position: relative;
+    padding-left: 68px;
+    margin-top: 0px;
+    max-width: 600px;
+    text-align: left;
   }
 
   .cases-item-2 {
