@@ -218,6 +218,7 @@ nav a:hover {
   color: white;
   padding-bottom: 40px;
   text-align: center;
+  margin: 0;
 }
 
 .gallery-item img {
@@ -599,6 +600,7 @@ footer i {
 
 
   header {
+    position: relative;
     height: 150px;
     margin-top: 30px;
     justify-content: space-between;
@@ -632,6 +634,8 @@ footer i {
     max-width: 33%;
     margin: 0 auto;
   }
+
+  
 
   .gallery-item img {
     height: 500px;
