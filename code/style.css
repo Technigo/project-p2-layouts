@@ -215,7 +215,9 @@ nav a:hover {
 
 #gallery-h2 {
   position: absolute;
+  font-family: bungee;
   color: white;
+  font-size: 18px;
   padding-bottom: 40px;
   text-align: center;
   margin: 0;
@@ -311,8 +313,10 @@ nav a:hover {
 }
 
 .blog-item-2 h1, h2, p {
-  font-weight: 100;
+  font-weight: 120;
   text-align: left;
+  color: rgb(110, 109, 109);
+  letter-spacing: 1px;
 }
 
 .blog-item-3 {
@@ -353,7 +357,7 @@ nav a:hover {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #444448;
+  color: rgb(110, 109, 109);
   font-weight: 100;
   font-size: 14px;
   margin-top: 30px;
@@ -362,12 +366,12 @@ nav a:hover {
 #contact a:link {
   font-family: 'Rubik', sans-serif;
   font-size: 14px;
-  color: #232323;
+  color: rgb(110, 109, 109);
   text-decoration: none;
 }
 
 #contact a:visited {
-  color: #464545;
+  color: rgb(110, 109, 109);
   text-decoration: none;
 }
 
@@ -428,7 +432,6 @@ footer {
   height: 200px;
   width: 100vw;
   max-width: 2500px;
-  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
