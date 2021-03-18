@@ -1,16 +1,18 @@
 
 * {
   box-sizing: border-box;
+
 }
 
 body {
   font-family: 'Rubik', sans-serif;
+  max-width: 2000px;
   margin: 0 auto;
-  max-width: 2500px;
 }
 
 .container {
   margin: 0 auto;
+
 }
 
 h1 {
@@ -166,8 +168,12 @@ nav a:hover {
 
 #menu li {
   padding: 10px 0;
-  font-size: 20px;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #444448;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 #menuToggle input:checked ~ ul {
@@ -188,7 +194,7 @@ nav a:hover {
   display: flex;
   flex-flow : wrap;
   width: 100vw;
-  max-width: 2500px;
+  max-width: 2000px;
 }
 
 .gallery a {
@@ -215,9 +221,11 @@ nav a:hover {
 
 #gallery-h2 {
   position: absolute;
-  font-family: bungee;
   color: white;
-  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 16px;
+  font-weight: normal;
   padding-bottom: 40px;
   text-align: center;
   margin: 0;
@@ -602,6 +610,14 @@ footer i {
 @media (min-width: 900px) {
 
 
+.navigation-mobile {
+  display: none;
+}
+.navigation-desktop {
+  display: block;
+}
+
+
   header {
     position: relative;
     height: 150px;
@@ -639,7 +655,6 @@ footer i {
   }
 
 
-
   .gallery-item img {
     height: 500px;
   }
@@ -667,10 +682,9 @@ footer i {
 
   .cases-item-1 p {
     position: relative;
-    padding-left: 68px;
-    margin-top: 0px;
     max-width: 600px;
     text-align: left;
+    margin-top: 0px;
   }
 
   .cases-item-2 {
@@ -702,14 +716,13 @@ footer i {
   .blog-item-2 h1, h2, p {
     text-align: left;
     margin-top: 20px;
-    margin-right: 50px;
-    margin-left: -70px;
   }
 
   .blog-item-3 {
     width: 100%;
-    padding: 0 100px;
+    padding: 0 50px;
   }
+
 
   .blog-item-4 {
     align-self: start;
@@ -773,6 +786,27 @@ footer i {
 
   .blog .container {
     max-width: 1100px;
+  }
+
+  .blog-item-2 {
+    max-width: 700px;
+  }
+
+  .blog-item-2 h1 {
+    padding: 0%;
+  }
+
+  .blog-item-3 {
+    max-width: 700px;
+  }
+
+  .blog-item-3 p, h2 {
+    width: 750px;
+    padding: 0;
+  }
+
+  .blog-item-3 h1 {
+    padding: 0;
   }
 
 }
