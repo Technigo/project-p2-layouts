@@ -243,7 +243,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  max-width: 2500px;
+  max-width: 2000px;
 }
 
 .cases-hero {
@@ -282,7 +282,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  max-width: 2500px;
+  max-width: 2000px;
 }
 
 .blog {
@@ -610,12 +610,13 @@ footer i {
 @media (min-width: 900px) {
 
 
-.navigation-mobile {
-  display: none;
-}
-.navigation-desktop {
-  display: block;
-}
+  .navigation-mobile {
+    display: none;
+  }
+
+  .navigation-desktop {
+    display: block;
+  }
 
 
   header {
@@ -636,7 +637,7 @@ footer i {
 
   .screen {
     width: 60px;
-    margin-right: 135px;
+    margin-left: 10px;
   }
 
   nav {
