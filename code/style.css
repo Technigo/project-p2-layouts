@@ -1,7 +1,6 @@
 
 * {
   box-sizing: border-box;
-
 }
 
 body {
@@ -12,15 +11,14 @@ body {
 
 .container {
   margin: 0 auto;
-
 }
 
 h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #444448;
-  font-size: 16px;
-  font-weight: normal;
+  font-size: 14px;
+  font-weight: lighter;
 }
 
 h2 {
@@ -35,6 +33,14 @@ p {
   color: #444448;
 }
 
+a {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #444448;
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: none;
+}
 
 /*** HEADER ***/
 
@@ -45,6 +51,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0;
+  margin: 0 28px;
 }
 
 #header-text {
@@ -172,7 +179,7 @@ nav a:hover {
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #444448;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
 }
 
@@ -215,8 +222,10 @@ nav a:hover {
   justify-content: flex-end;
 }
 
-.gallery-item:hover {
-  opacity: 80%;
+.gallery-item:hover,
+.gallery-item:active,
+.gallery-item:focus {
+  opacity: 50%;
 }
 
 #gallery-h2 {
@@ -224,7 +233,7 @@ nav a:hover {
   color: white;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   padding-bottom: 40px;
   text-align: center;
@@ -317,7 +326,7 @@ nav a:hover {
   width: 100%;
   height: auto;
   max-width: 700px;
-  padding: 50px;
+  padding: 0px 50px;
 }
 
 .blog-item-2 h1, h2, p {
@@ -367,13 +376,13 @@ nav a:hover {
   letter-spacing: 3px;
   color: rgb(110, 109, 109);
   font-weight: 100;
-  font-size: 14px;
+  font-size: 12px;
   margin-top: 30px;
 }
 
 #contact a:link {
   font-family: 'Rubik', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: rgb(110, 109, 109);
   text-decoration: none;
 }
@@ -389,7 +398,7 @@ nav a:hover {
 }
 
 #contact a:active {
-  color: #464545;
+  color: #1c1d27;
   text-decoration: none;
   background-color: yellow;
 }
@@ -409,7 +418,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-content: center;
-  background-color: #444448;
+  background-color: #1c1d27;
   height: 60px;
   width: 60px;
   border-radius: 50%;
@@ -418,7 +427,7 @@ nav a:hover {
 }
 
 .footer-card i {
-  color: white;
+  color: #1c1d27;
   font-size: 30px;
   text-decoration: none;
   border: none;
@@ -449,7 +458,7 @@ footer button {
   display: flex;
   justify-content: center;
   align-content: center;
-  background-color: white;
+  background-color: #1c1d27;
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -457,11 +466,12 @@ footer button {
   margin: 10px 0 30px 0;
 }
 
+.on-white button {
+  background-color: white;
+}
+
 footer i {
-  color: #444448;
   font-size: 30px;
-  text-decoration: none;
-  border: none;
 }
 
 .icon-container {
@@ -472,16 +482,32 @@ footer i {
   color: white;
 }
 
+
+.icon-container i { 
+  transition: all 0.3s ease-in-out 0s; 
+}
+
 .icon-container:hover,
 .icon-container:active,
 .icon-container:focus {
-  background-color: yellow;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.icon-container i:hover,
+.icon-container i:active,
+.icon-container i:focus {
+  font-size: 45px;
 }
 
 /*** MEDIA QUERIES ***/
 
 
 @media (max-width: 400px) {
+
+  header {
+    margin: 0 26px;
+  }
 
   .hamburger {
     max-width: 15px;
@@ -493,7 +519,7 @@ footer i {
     height: 3px;
   }
   #header-text {
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 2px;
   }
 
@@ -637,7 +663,7 @@ footer i {
 
   .screen {
     width: 60px;
-    margin-left: 10px;
+    margin-left: 34px;
   }
 
   nav {
@@ -647,7 +673,7 @@ footer i {
 
 
   .gallery .container {
-    height: 1500px;
+    height: 2000px;
   }
 
   .gallery-item {
@@ -750,7 +776,7 @@ footer i {
 @media (min-width: 1101px) {
 
   .gallery .container {
-    height: 1800px;
+    height: 2400px;
   }
 
   .gallery-item img {
