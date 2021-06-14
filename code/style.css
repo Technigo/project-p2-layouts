@@ -59,7 +59,7 @@ header {
   z-index: 3;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #444448;
+  color: #696970;
   text-align: center;
   padding: 0%;
 }
@@ -80,7 +80,7 @@ nav {
 }
 
 nav a {
-  color: #444448;
+  color: #696970;
   text-decoration: none;
   margin-left: 16px;
 }
@@ -448,7 +448,7 @@ nav a:hover {
 footer {
   height: 200px;
   width: 100vw;
-  max-width: 2500px;
+  max-width: 2000px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -865,7 +865,7 @@ footer i {
   }
 
   .gallery {
-    height: 2250px;
+    height: 3000px;
   }
 
   .gallery-item img {
