@@ -1,0 +1,181 @@
+body {
+    background-color: rgb(169, 203, 206);
+    color: rgb(232, 250, 250);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  h1 {
+    font-size: 64px;
+    margin: 0;
+    font-family: 'Neucha', cursive;
+}
+  
+  h2 {
+    font-size: 24px;
+    font-family: 'Amatic SC', cursive;
+  }
+  
+  h3 {
+    font-size: 24px;
+    padding: 0 8px;
+    margin-top: 16px;
+    margin-bottom: -16px;
+  }
+  
+  h4 {
+    font-size: 16px;
+    padding: 8px;
+  }
+  
+  p {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  /*** HEADER ***/
+  
+  header {
+    background-color: rgb(66, 116, 113);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-radius: 20px;
+    font-size: 24px;
+    font-family:  'Zen Kurenaido', sans-serif;
+  }
+  
+  header img {
+    height: 100%;
+  }
+  
+  nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-right: 16px;
+  }
+  
+  /*** INTRODUCTION WORK ***/
+  .Introduction-Work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 16px;
+  }
+ 
+   .Introduction-Work div {
+     color: rgb(245, 255, 255);
+     text-align: center;
+     margin-bottom: 8px;
+   }
+
+   .Introduction-Work img {
+       width: 30%;
+       margin-bottom: -20px;
+       margin-top: 0;
+       max-width: 200px;
+   }
+
+   .introduction-images {
+       display: flex;
+       justify-content: space-between;
+   }
+
+   .mini-menu-links {
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     align-items: center;
+     margin-bottom: 16px;
+     margin-top: 24px;
+   }
+  
+   .mini-menu-links div {
+    width: 3px;
+    height: 32px;
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 0px;
+   }
+  
+   .mini-menu-links a {
+     text-decoration: none;
+     color: white;
+   }
+
+   .page-title {
+       text-align: center;
+   }
+
+   /*** ILLUSTRATIONS ***/
+
+   .illustrations {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+   }
+
+   .illustrations img {
+       width: 100%;
+       padding: 16px 8px;
+   }
+
+   .illustrations a {
+       margin-bottom: 32px;
+       margin-top: 32px;
+       padding: 0;
+   }
+
+   @media (min-width: 650px) {
+        header {
+        font-size: 32px;
+      }
+  
+      .mini-menu-links {
+        font-size: 24px;
+      }
+
+      .Introduction-Work img {
+        width: 30%;
+        margin-bottom: -80px;
+        }
+
+        .illustrations {
+            flex-direction: row;
+        }
+
+        .illustrations a img {
+            width: 100%;
+            max-width: 450px;
+        }
+
+       .illustrations img {
+           width: 40%;
+           max-width: 450px;
+       }
+   }
+
+   @media (min-width: 900px) {
+    .mini-menu-links {
+        font-size: 32px;
+        margin-bottom: 32px;
+        margin-top: 0;
+        justify-content: center;
+      }
+  
+      .mini-menu-links a {
+        padding-inline: 32px;
+      }
+
+      .introduction-images {
+          margin-top: -50px;
+          margin-bottom: -90px;
+      }
+
+      .page-title {
+          text-align: start;
+          margin-left: 32px;
+      }
+   }
