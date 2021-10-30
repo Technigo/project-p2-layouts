@@ -84,9 +84,10 @@ img {
 	text-decoration: none;
 }
 
-.card content a {
+#link-orange {
 	color: rgb(218, 84, 46);
 	text-decoration: none;
+    font-weight: bold;
 }
 
 
