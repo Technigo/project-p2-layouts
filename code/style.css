@@ -1,5 +1,324 @@
-/* If you can see a peach background, the css file is correctly linked. Feel free to change or remove this styling! */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body {
-  background-color: peachpuff;
+  font-family: "Courier New", Courier, monospace;
+}
+
+header {
+  position:relative;
+  margin: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 2;
+}
+footer {
+  margin: 40px 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 10px;
+}
+
+
+#hamburger{
+}
+#hamburger:hover{
+  cursor: pointer;
+}
+
+#hamburger .hamburger-line {
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  border-radius: 5px;
+  margin: 5px;
+  margin-left: 0;
+}
+
+#navbar {
+  display: none;
+}
+
+#navbar a {
+  margin-right: 8%;
+  color: black;
+  text-decoration: none;
+  font-size: 32px;
+}
+#navbar a:hover{
+  font-weight: bolder;
+}
+
+#navbarmobile{
+  display: none;
+}
+
+#navbarmobile a {
+  color: black;
+  text-decoration: none;
+  font-size: 32px;
+  padding:5px 0;
+}
+#navbarmobile a:hover{
+  font-weight: bolder;
+}
+
+header a{
+  color: black;
+  text-decoration: none;
+}
+header a:hover{
+  font-weight: bolder;
+}
+.pagelink {
+  font-weight: bold;
+}
+
+#logo {
+  font-size: 14px;
+  text-align: end;
+}
+
+.mobile-menu-open #hamburger .hamburger-line:nth-child(1){
+  transform: translateY(5px) rotate(45deg);
+}
+
+.mobile-menu-open #hamburger .hamburger-line:nth-child(2){
+  display: none;
+}
+
+.mobile-menu-open #hamburger .hamburger-line:nth-child(3){
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+/*---------------------_*/
+
+.pagecontent {
+  margin: 40px;
+}
+
+.pagetitle {
+  text-align: left;
+  margin: 40px;
+}
+
+.pagecontent a{
+  color: black;
+}
+.pagecontent a:hover{
+  font-weight: bolder;
+}
+
+/***** INDEX.HTML *****/
+.boxaktuell{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.boxaktuell img{
+  width: 100%;
+  max-width: 560px;
+  margin: 5% 0;
+}
+
+.boxaktuell a{
+  display: flex;
+  margin: auto;
+  width: 8%;
+  max-width: 40px;
+  margin-top: 10%;
+}
+
+/***** WORK.HTML *****/
+.workpagecontent {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.workcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 0 40px 0;
+}
+
+.workcontainer a {
+  text-decoration: none;
+  color: black;
+}
+
+.workcontainer a:hover {
+  padding: 2px;
+  border-radius: 10px;
+}
+
+.workcontainerImage {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.workimage {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.workcontainerText {
+  margin-top: 50px;
+}
+
+.workdescription {
+  margin: 10px 0;
+}
+
+.price {
+  margin: 15px 0;
+  font-style: italic;
+  /*text-align: right;*/
+}
+
+/***** ABOUT.HTML *****/
+#steckbriefe{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.steckbrief{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px 0;
+  
+}
+.steckbrief img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 20px auto;
+
+}
+.steckbrief a{
+  text-decoration: underline;
+  color: black;
+}
+.steckbrief a:hover{
+  font-weight: bolder;
+}
+.imgplatzhalter{
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+  margin: 20px auto;
+}
+
+
+.steckbrieftext{
+}
+
+
+/***** CONTACT.HTML *****/
+.icon {
+  width: 40px;
+  margin: 10px 10px 10px 0;
+}
+/*
+#kontaktformular{
+
+}
+label{
+  
+  display: flex;
+  padding: 10px 0;
+}
+input{
+  display: flex;
+  background-color: lightcyan;
+}
+input:nth-child(3){
+  background-color: lavenderblush;
+}
+button{
+  background-color: burlywood;
+}
+*/
+@media (max-width: 767px) {
+  #navbar{
+    display: none;
+  }
+
+  .mobile-menu-open #navbarmobile{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    }
+  }
+
+@media (min-width: 768px) {
+  #hamburger {
+    display: none;
+  }
+  #navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+  }
+  #logo {
+    font-size: 18px;
+  }
+  .pagetitle {
+    display: none;
+  }
+  .pagetitle-invisible {
+    display: block;
+  }
+  .workpagecontent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .workcontainer {
+    width: 47%;
+  }
+  .boxaktuell{
+    margin:50px auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .workcontainer {
+    width: 30%;
+  }
+  #steckbriefe{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .boxaktuell{
+    width: 500px;
+    margin: 120px auto;
+  }
 }

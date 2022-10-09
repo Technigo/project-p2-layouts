@@ -1,13 +1,8 @@
-# Project Name
+# Website for an illustration-collective
 
-Replace this readme with your own information about your project.
+I'm building a little website for  a collective of illustrators called "salamihochdrei".
+It contains a landing page, a page each for works, contact and about, and in the future I'd like to add in a web-shop.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+## The problem / main focus
 
-## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
-## View it live
-
-Have you deployed your project somewhere? Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+My main focus was on making this website responsive and nice to use on mobile, tablet and desktop. It's far from finished (the about and contact site aren't even styled), but I've learned a lot with flexbox, the card layout and the media queries, and will continue building this website to eventually also put it online :)
