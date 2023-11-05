@@ -1,5 +1,94 @@
 /* If you can see a peach background, the css file is correctly linked. Feel free to change or remove this styling! */
 
 body {
-  background-color: peachpuff;
+  background-color: #f1f1f1;
+  margin: 0px;
 }
+
+.navigation-list {
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background-color: #f0bbcd;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: right;
+  /* Add a white right border to all list items. */
+  border-left: 1px solid #ffffff;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+h1 {
+  color: #f0bbcd;
+  text-align: center;
+  size: 100px;
+  font-weight: bold;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+.top-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.article-container {
+  max-width: 66%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #f0bbcd;
+}
+
+.article-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.article {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.class-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/*
+.about-image {
+  max-width: 50%;
+  max-height: 300px;
+  float: left;
+  object-fit: cover;
+}
+*/
